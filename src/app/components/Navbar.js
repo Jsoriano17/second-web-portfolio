@@ -21,6 +21,8 @@ export const Navbar = () => {
 
 const Container = styled.div`
     position: absolute;
+    top: 0px; 
+    left: 0px;
 `
 const StyledNav = styled.nav`
    font-size: 25px;
