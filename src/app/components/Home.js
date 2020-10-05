@@ -14,80 +14,103 @@ import styled from 'styled-components';
 export const Home = () => {
     return (
         <Container>
-            {/* <StyledImg src={paper}/> */}
-            <StyledHair />
-            <StyledEyebrows />
-            <StyledFace />
-            <StyledLips />
-            <StyledEarrings />
+            <Face>
+                {/* <StyledImg src={paper}/> */}
+                <StyledHair />
+                <StyledEyebrows />
+                <StyledFace />
+                <StyledLips />
+                <StyledEarrings />
+            </Face>
+            
         </Container>
     )
 }
 
-const headHeight = '111.11111111111111vh';
-const headWidth = '54.6875vw';
+const headHeight = '91vh';
+const headWidth = '44%';
 
 
 const Container = styled.div`
-    height: 111vh;
-    width: 100%;
+    height:100vh;
+    width:100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+`
+const Face = styled.div`
+    display: block;
     position: relative;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-top: 9vh;
+    background: black;
+    width: ${headWidth};
+    height: ${headHeight};
 `
 const StyledHair = styled.div`
     position: absolute; 
-    width: ${headWidth};
-    height: ${headHeight};
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
     background: url(${MagHairBack}) fixed;
-    background-size: ${headWidth} ${headHeight};
-    background-repeat: no-repeat;
+    background-position:1% 6vh;
+    background-size: contain;
     -webkit-mask: url(${MagHair});
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
 `
 const StyledFace = styled.div`
-    position: absolute;
-    width: ${headWidth};
-    height: ${headHeight};
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
     background: url(${MagFaceBack}) fixed;
-    background-size: ${headWidth} ${headHeight};
-    background-repeat: no-repeat;
+    background-position: 1% 5vh;
+    background-size: contain;
     -webkit-mask: url(${MagFace});
     -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat
+    -webkit-mask-repeat: no-repeat;
 `
 const StyledLips = styled.div`
-    position: absolute;
-    width: ${headWidth};
-    height: ${headHeight};
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
     background: url(${MagLipsBack}) fixed;
-    background-size: ${headWidth} ${headHeight};
-    background-repeat: no-repeat;
+    background-position:1% 2vh;
+    background-size: contain;
     -webkit-mask: url(${MagLips});
     -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat
+    -webkit-mask-repeat: no-repeat;
 `
 const StyledEyebrows = styled.div`
-    position: absolute;
-    width: ${headWidth};
-    height: ${headHeight};
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
     background: url(${MagEyebrowsBack}) fixed;
-    background-size: ${headWidth} ${headHeight};
-    background-repeat: no-repeat;
+    background-position:1% 5.5vh;
+    background-size: contain;
     -webkit-mask: url(${MagEyebrows});
     -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat
+    -webkit-mask-repeat: no-repeat;
 `
 const StyledEarrings = styled.div`
-    position: absolute;
-    width: ${headWidth};
-    height: ${headHeight};
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
     background: url(${MagEarringsBack}) fixed;
-    background-size: ${headWidth} ${headHeight};
-    background-repeat: no-repeat;
+    background-position:1% 2.5vh;
+    background-size: contain;
     -webkit-mask: url(${MagEarrings});
     -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat
+    -webkit-mask-repeat: no-repeat;
 `

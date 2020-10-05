@@ -23,6 +23,7 @@ const Container = styled.div`
     position: absolute;
     top: 0px; 
     left: 0px;
+    z-index: 1;
 `
 const StyledNav = styled.nav`
    font-size: 25px;
