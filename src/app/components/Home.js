@@ -108,7 +108,7 @@ const StyledEarrings = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagEarringsBack}) fixed;
-    background-position:1% 2.5vh;
+    background-position:1% 4vh;
     background-size: contain;
     -webkit-mask: url(${MagEarrings});
     -webkit-mask-size: 100% 100%;
