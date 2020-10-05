@@ -3,6 +3,8 @@ import MagHair from '../assets/magazine-hair.png';
 import MagHairBack from '../assets/the-gentleman.jpg';
 import MagEyebrows from '../assets/magazine-eyebrows.png';
 import MagEyebrowsBack from '../assets/magazine-eyebrows-back.jpg';
+import MagEyes from '../assets/eyes-gif.gif';
+import MagEyeDuct from '../assets/magazine-eye-ducts.png';
 import MagFace from '../assets/magazine-face.png';
 import MagFaceBack from '../assets/magazine-face-back.jpg';
 import MagLips from '../assets/magazine-lips.png';
@@ -18,6 +20,8 @@ export const Home = () => {
                 {/* <StyledImg src={paper}/> */}
                 <StyledHair />
                 <StyledEyebrows />
+                <StyledEyes src={MagEyes} />
+                <StyledEyeDuct src={MagEyeDuct} />
                 <StyledFace />
                 <StyledLips />
                 <StyledEarrings />
@@ -44,7 +48,6 @@ const Face = styled.div`
     margin-left: 3%;
     margin-right: 5%;
     margin-top: 9vh;
-    background: black;
     width: ${headWidth};
     height: ${headHeight};
 `
@@ -100,6 +103,21 @@ const StyledEyebrows = styled.div`
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
 `
+const StyledEyes = styled.img`
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+`
+const StyledEyeDuct = styled.img`
+    position: absolute; 
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+`
+
 const StyledEarrings = styled.div`
     position: absolute; 
     top:0;
