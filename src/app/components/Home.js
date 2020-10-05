@@ -68,7 +68,7 @@ const StyledFace = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagFaceBack}) fixed;
-    background-position: 1% 5vh;
+    background-position: 0% 5vh;
     background-size: contain;
     -webkit-mask: url(${MagFace});
     -webkit-mask-size: 100% 100%;
