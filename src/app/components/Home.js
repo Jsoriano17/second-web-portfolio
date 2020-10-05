@@ -22,7 +22,6 @@ export const Home = () => {
                 <StyledLips />
                 <StyledEarrings />
             </Face>
-            
         </Container>
     )
 }
@@ -95,7 +94,7 @@ const StyledEyebrows = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagEyebrowsBack}) fixed;
-    background-position:1% 5.5vh;
+    background-position: 0% 5.5vh;
     background-size: contain;
     -webkit-mask: url(${MagEyebrows});
     -webkit-mask-size: 100% 100%;
