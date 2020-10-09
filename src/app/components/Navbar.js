@@ -21,7 +21,7 @@ export const Navbar = () => {
 
 const Container = styled.div`
     position: absolute;
-    top: 0px; 
+    top: 10px; 
     left: 0px;
     z-index: 1;
 `
