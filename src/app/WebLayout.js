@@ -10,7 +10,6 @@ export const WebLayout = () => {
     return (
         <>
             <Home />
-            <Slide />
             <Projects />
             <Skills />
             <AboutMe />

@@ -33,7 +33,7 @@ const headWidth = '42%';
 const StyledHead = styled.div`
     display: block;
     position: relative;
-    margin-left: 3%;
+    margin-left: 1%;
     margin-right: 5%;
     margin-top: 9vh;
     width: ${headWidth};
@@ -77,7 +77,7 @@ const StyledHair = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagHairBack}) fixed;
-    background-position: 6% 11vh;
+    background-position: 3% 11vh;
     background-size: 41% 90%;
     -webkit-mask: url(${MagHair});
     -webkit-mask-size: 100% 100%;
@@ -90,7 +90,7 @@ const StyledFace = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagFaceBack}) fixed;
-    background-position: 6% 11.5vh;
+    background-position: 3% 11.5vh;
     background-size: 41% 86%;
     -webkit-mask: url(${MagFace});
     -webkit-mask-size: 100% 100%;
@@ -103,7 +103,7 @@ const StyledLips = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagLipsBack}) fixed;
-    background-position:-2.5% 0vh;
+    background-position:-4.5% 0vh;
     background-size: contain;
     -webkit-mask: url(${MagLips});
     -webkit-mask-size: 100% 100%;
@@ -116,7 +116,7 @@ const StyledEyebrows = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagEyebrowsBack}) fixed;
-    background-position: -4% 6vh;
+    background-position: -6% 6vh;
     background-size: contain;
     -webkit-mask: url(${MagEyebrows});
     -webkit-mask-size: 100% 100%;
