@@ -10,7 +10,7 @@ export const Home = () => {
     return (
         <Container>
             <StyledBackground src={paper} />
-            <Face />
+            {/* <Face /> */}
             <StyledAnimation>
                 <MagLetters />
             </StyledAnimation>
@@ -30,7 +30,6 @@ const Container = styled.div`
     height:100vh;
     width:100%;
     display: flex;
-    background: #fff3eb;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
