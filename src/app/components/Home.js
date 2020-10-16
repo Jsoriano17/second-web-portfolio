@@ -10,9 +10,9 @@ import { keyframes } from 'styled-components'
 export const Home = () => {
     return (
         <Container>
-            <StyledGif src={paperGif}/>
-            <StyledBackground src={paper}/>
-            {/* <Face /> */}
+            <StyledGif src={paperGif} />
+            <StyledBackground src={paper} />
+            <Face />
             <StyledAnimation>
                 <MagLetters />
             </StyledAnimation>
@@ -37,7 +37,6 @@ const Container = styled.div`
     justify-content: space-between;
     overflow: hidden;
     background: white;
-    
 `
 const StyledAnimation = styled.div`
     opacity: 0;
@@ -48,8 +47,9 @@ const StyledBackground = styled.img`
     position: absolute; 
     top: 0;
     left: 0; 
-    zIndex: 0; 
+    z-index: 0; 
     width: 100%;
+    height: 117vh;
 `
 
 const StyledGif = styled.img`
@@ -58,6 +58,7 @@ const StyledGif = styled.img`
     left: 0; 
     z-index: 1; 
     width: 100%;
+    height: 21.3vh;
 `
 
 

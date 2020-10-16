@@ -26,7 +26,7 @@ export const Navbar = () => {
 
 const Container = styled.div`
     position: absolute;
-    top: 10px; 
+    top: 35px; 
     left: 0px;
     z-index: 1;
 `
@@ -60,8 +60,8 @@ const StyledAbout = styled.a`
 `
 const ContainerRight = styled.div`
     position: absolute;
-    top: 10px; 
-    right: 30px;
+    top: 40px; 
+    right: 60px;
     z-index: 1;
     display: flex;
     flex-direction: row;

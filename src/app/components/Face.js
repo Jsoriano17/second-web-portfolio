@@ -27,17 +27,18 @@ export const Face = () => {
     )
 }
 
-const headHeight = '85vh';
-const headWidth = '42%';
+const headHeight = '80vh';
+const headWidth = '39%';
 
 const StyledHead = styled.div`
     display: block;
     position: relative;
     margin-left: 1%;
     margin-right: 5%;
-    margin-top: 9vh;
+    margin-top: 11vh;
     width: ${headWidth};
     height: ${headHeight};
+    z-index: 1;
 `
 
 /**************************
@@ -77,7 +78,7 @@ const StyledHair = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagHairBack}) fixed;
-    background-position: 3% 11vh;
+    background-position: 1% 12vh;
     background-size: 41% 90%;
     -webkit-mask: url(${MagHair});
     -webkit-mask-size: 100% 100%;
@@ -90,7 +91,7 @@ const StyledFace = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagFaceBack}) fixed;
-    background-position: 3% 11.5vh;
+    background-position: 1% 12.5vh;
     background-size: 41% 86%;
     -webkit-mask: url(${MagFace});
     -webkit-mask-size: 100% 100%;
@@ -116,7 +117,7 @@ const StyledEyebrows = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagEyebrowsBack}) fixed;
-    background-position: -6% 6vh;
+    background-position: -8% 8vh;
     background-size: contain;
     -webkit-mask: url(${MagEyebrows});
     -webkit-mask-size: 100% 100%;
@@ -144,7 +145,7 @@ const StyledEarrings = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagEarringsBack}) fixed;
-    background-position:1% 4vh;
+    background-position:0% 2vh;
     background-size: contain;
     -webkit-mask: url(${MagEarrings});
     -webkit-mask-size: 100% 100%;
