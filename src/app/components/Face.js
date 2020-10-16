@@ -38,7 +38,7 @@ const StyledHead = styled.div`
     margin-top: 11vh;
     width: ${headWidth};
     height: ${headHeight};
-    z-index: 1;
+    z-index: 2;
 `
 
 /**************************
