@@ -1,5 +1,6 @@
 import React from 'react';
-import paper from '../assets/paper-background.png';
+import paper from '../assets/paper-background-top-off.png';
+import paperGif from '../assets/PaperBackgroundAnimation-Gif.gif';
 import styled from 'styled-components';
 import { Face } from './Face';
 import MagLetters from './MagLetters';
@@ -9,7 +10,8 @@ import { keyframes } from 'styled-components'
 export const Home = () => {
     return (
         <Container>
-            <StyledBackground src={paper} />
+            <StyledGif src={paperGif}/>
+            <StyledBackground src={paper}/>
             {/* <Face /> */}
             <StyledAnimation>
                 <MagLetters />
@@ -34,6 +36,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    background: white;
     
 `
 const StyledAnimation = styled.div`
@@ -47,6 +50,14 @@ const StyledBackground = styled.img`
     left: 0; 
     zIndex: 0; 
     width: 100%;
-    height: 117vh;
 `
+
+const StyledGif = styled.img`
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    z-index: 1; 
+    width: 100%;
+`
+
 
