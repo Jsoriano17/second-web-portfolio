@@ -1,13 +1,14 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
-import { Navbar } from './components/Navbar';
+import { AboutMe } from './components/AboutMe';
 import { WebLayout } from './WebLayout';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <WebLayout />
+      <Route exact path="/" component={WebLayout} />
+      <Route exact path={'/about'} component={AboutMe}/>
     </>
   );
 }
