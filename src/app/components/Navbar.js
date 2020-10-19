@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { ArrowRightOutlined } from '@ant-design/icons';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 
@@ -21,20 +20,33 @@ export const Navbar = () => {
                 </StyledNav>
             </Container>
             <ContainerRight style={{zIndex: index}}>
-                <StyledAbout as={Link} to='/about'>About</StyledAbout>
-                <ArrowRightOutlined style={{fontSize: '20px', color: 'grey'}} />
+                <StyledAbout as={Link} to='/about'>About-{">"}</StyledAbout>
             </ContainerRight>
         </>
     )
 }
 
+const shake = keyframes`
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+`
+
 const Container = styled.div`
     position: absolute;
-    top: 35px; 
+    top: 40px; 
     left: 0px;
 `
 const StyledNav = styled.nav`
-   font-size: 25px;
+   font-size: 19px;
 `
 const StyledUl = styled.ul`
     display: flex;
@@ -43,28 +55,20 @@ const StyledUl = styled.ul`
     text-align: center;
 `
 const StyledLi = styled.li`
-    margin: 0 10px;
-    color: grey;
+    margin: 0 5px;
+    color: black;
     cursor: pointer;
+    font-family: Impact_Label;
 
     &:hover {
-        color: black;
-    }
-`
-const StyledAbout = styled.a`
-    font-size: 25px;
-    margin: 0 10px;
-    color: grey;
-    cursor: pointer;
-
-    &:hover {
-        color: black;
+        animation: ${shake} 0.5s;
+        animation-iteration-count: infinite;
     }
 `
 const ContainerRight = styled.div`
     position: absolute;
-    top: 43px; 
-    right: 60px;
+    top: 45px; 
+    right: 58px;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -72,3 +76,16 @@ const ContainerRight = styled.div`
     text-align: center;
     align-items: center;
 `
+const StyledAbout = styled.a`
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    font-family: Impact_Label;
+
+    &:hover {
+        color: black;
+        animation: ${shake} 0.5s;
+        animation-iteration-count: infinite;
+    }
+`
+
