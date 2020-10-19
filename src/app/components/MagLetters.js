@@ -15,6 +15,6 @@ export default MagLetters
 const StyledImg = styled.img`
     width: 730px;
     position: absolute;
-    right: 30px;
-    top: 250px;
+    right: 2vw;
+    top: 35vh;
 `

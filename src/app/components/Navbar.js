@@ -42,8 +42,8 @@ const shake = keyframes`
 
 const Container = styled.div`
     position: absolute;
-    top: 40px; 
-    left: -7px;
+    top: 5.9vh; 
+    left: -0.6vw;
 `
 const StyledNav = styled.nav`
    font-size: 19.5px;
@@ -67,7 +67,7 @@ const StyledLi = styled.li`
 `
 const ContainerRight = styled.div`
     position: absolute;
-    top: 45px; 
+    top: 6.7vh; 
     right: 58px;
     z-index: 1;
     display: flex;

@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import { Face } from './Face';
 import MagLetters from './MagLetters';
 import { keyframes } from 'styled-components'
+import ContactIcons from './ContactIcons';
 
 
 export const Home = () => {
@@ -18,9 +19,10 @@ export const Home = () => {
             <StyledBackground src={paper} />
             <StyledBackgroundShadow src={paperShadow} />
             <Face />
-            <FaceBack src={MagWhiteFace}/>
+            <FaceBack src={MagWhiteFace} />
             <StyledAnimation>
-                <MagLetters  />
+                <MagLetters />
+                <ContactIcons />
             </StyledAnimation>
         </Container>
     )
@@ -86,7 +88,7 @@ const StyledGifShadow = styled.img`
     height: 21.3vh;
     opacity: .2;
 `
-const FaceBack = styled.img `
+const FaceBack = styled.img`
     position: absolute;
     margin-left: 1%;
     margin-right: 12vh;
