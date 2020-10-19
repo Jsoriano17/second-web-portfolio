@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { ArrowRightOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 
 export const Navbar = () => {
+    const [index, setIndex] = useState(1);
+
+    setTimeout(function(){ setIndex(2) }, 3200)
     return (
         <>
-            <Container>
+            <Container style={{zIndex: index}}>
                 <StyledNav>
                     <StyledUl>
                         <StyledLi style={{ color: 'black' }}>Projects</StyledLi>
@@ -16,8 +20,8 @@ export const Navbar = () => {
                     </StyledUl>
                 </StyledNav>
             </Container>
-            <ContainerRight>
-                <StyledAbout>About</StyledAbout>
+            <ContainerRight style={{zIndex: index}}>
+                <StyledAbout as={Link} to='/about'>About</StyledAbout>
                 <ArrowRightOutlined style={{fontSize: '20px', color: 'grey'}} />
             </ContainerRight>
         </>
@@ -28,7 +32,6 @@ const Container = styled.div`
     position: absolute;
     top: 35px; 
     left: 0px;
-    z-index: 1;
 `
 const StyledNav = styled.nav`
    font-size: 25px;
@@ -60,7 +63,7 @@ const StyledAbout = styled.a`
 `
 const ContainerRight = styled.div`
     position: absolute;
-    top: 40px; 
+    top: 43px; 
     right: 60px;
     z-index: 1;
     display: flex;
