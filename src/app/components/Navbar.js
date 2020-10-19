@@ -43,10 +43,10 @@ const shake = keyframes`
 const Container = styled.div`
     position: absolute;
     top: 40px; 
-    left: 0px;
+    left: -7px;
 `
 const StyledNav = styled.nav`
-   font-size: 19px;
+   font-size: 19.5px;
 `
 const StyledUl = styled.ul`
     display: flex;
