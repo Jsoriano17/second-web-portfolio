@@ -1,6 +1,7 @@
 import React from 'react';
 import paper from '../assets/paper-background-top-off.png';
 import paperGif from '../assets/PaperBackgroundAnimation-Gif.gif';
+import paperGifShadow from '../assets/paper-rip-shading.png';
 import MagWhiteFace from '../assets/magazine-face-white-back.png';
 import styled from 'styled-components';
 import { Face } from './Face';
@@ -12,6 +13,7 @@ export const Home = () => {
     return (
         <Container>
             <StyledGif src={paperGif} />
+            <StyledGifShadow src={paperGifShadow} />
             <StyledBackground src={paper} />
             <Face />
             <FaceBack src={MagWhiteFace}/>
@@ -39,6 +41,7 @@ const Container = styled.div`
     justify-content: space-between;
     overflow: hidden;
     background: white;
+    margin-bottom: 13vh;
 `
 const StyledAnimation = styled.div`
     opacity: 0;
@@ -61,6 +64,15 @@ const StyledGif = styled.img`
     z-index: 1; 
     width: 100%;
     height: 21.3vh;
+`
+const StyledGifShadow = styled.img`
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    z-index: 0; 
+    width: 100%;
+    height: 21.3vh;
+    opacity: .2;
 `
 const FaceBack = styled.img `
     position: absolute;

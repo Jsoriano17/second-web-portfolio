@@ -10,16 +10,16 @@ import { Navbar } from './components/Navbar'
 
 export const WebLayout = () => {
     return (
-        <>
+        <Container>
             <Navbar />
             <Home />
             <Projects />
             <Skills />
             <Contacts />
-        </>
+        </Container>
     )
 }
 
 const Container = styled.div`
-  
+  background: #fedc00;
 `
