@@ -7,6 +7,7 @@ import { Slide } from './components/Slide'
 import { Contacts } from './components/Contacts'
 import styled from 'styled-components'
 import { Navbar } from './components/Navbar'
+import { BackTop } from 'antd'
 
 export const WebLayout = () => {
     return (
@@ -16,6 +17,7 @@ export const WebLayout = () => {
             <Projects />
             <Skills />
             <Contacts />
+            <BackTop />
         </Container>
     )
 }
