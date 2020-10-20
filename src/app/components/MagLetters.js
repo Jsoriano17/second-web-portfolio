@@ -4,9 +4,9 @@ import Letters from '../assets/magazine-letters.png'
 
 const MagLetters = () => {
     return (
-        <div>
+        <>
             <StyledImg src={Letters} />
-        </div>
+        </>
     )
 }
 

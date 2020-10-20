@@ -13,7 +13,9 @@ export const Projects = () => {
 
 const Container = styled.div`
     width: 100%;
-    height: 500px;
+    height: 1000px;
+    position: relative; 
+    overflow: auto;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;

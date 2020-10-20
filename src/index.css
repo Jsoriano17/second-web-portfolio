@@ -21,6 +21,14 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Made_Mirage';
+  src: url('MADE\ Mirage\ Black\ PERSONAL\ USE.otf') format('otf');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
