@@ -23,5 +23,5 @@ export const WebLayout = () => {
 }
 
 const Container = styled.div`
-  background: #a3a3a3;
+  background: white;
 `
