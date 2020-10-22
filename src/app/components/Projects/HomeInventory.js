@@ -15,7 +15,7 @@ const HomeInventory = () => {
                 Home Inventory to keep track <br /> 
                 of household items, receipts, <br />  
                 and documents. Never worry <br />  
-                again today!
+                again today! (desktop only)
             </StyledP>
             <StyledUl>
                 <li>React JS</li>
