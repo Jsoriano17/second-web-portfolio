@@ -42,7 +42,7 @@ const StyledImg = styled.img`
 `
 const StyledP = styled.p`
     font-size: 15px; 
-    margin-top: 295px;
+    margin-top: 110px;
     margin-left: 210px;
     position: relative;
     z-index: 2;

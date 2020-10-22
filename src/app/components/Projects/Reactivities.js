@@ -20,7 +20,7 @@ const Reactivities = () => {
                     <li>React JS</li>
                     <li>Typescript</li>
                     <li>MobX</li>
-                    <li>axios</li>
+                    <li>Axios</li>
                     <li>React Router</li>
                     <li>Many more...</li>
                 </StyledUl>
