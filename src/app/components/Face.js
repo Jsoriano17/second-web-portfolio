@@ -104,7 +104,7 @@ const StyledLips = styled.div`
     width: 100%;
     height: 100%;
     background: url(${MagLipsBack}) fixed;
-    background-position:-4.5% 0vh;
+    background-position:-5.5% -1vh;
     background-size: contain;
     -webkit-mask: url(${MagLips});
     -webkit-mask-size: 100% 100%;
