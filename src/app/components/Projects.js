@@ -19,7 +19,7 @@ const Container = styled.div`
     width: 100%;
     height: 5000px;
     position: relative; 
-    overflow: auto;
+    overflow: hidden;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
