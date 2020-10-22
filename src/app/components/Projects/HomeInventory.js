@@ -5,7 +5,6 @@ import magazine from '../../assets/magazines/homeInventory.png'
 const HomeInventory = () => {
     return (
         <>
-            <StyledImg src={magazine} />
             <StyledP>
                 Home Inventory is an app <br />
                 created to keep track of all  <br /> 
@@ -28,6 +27,7 @@ const HomeInventory = () => {
                 <li>Ruby On Rails</li>
                 <li>Devise</li>
             </StyledUl>
+            <StyledImg src={magazine} />
         </>
     )
 }

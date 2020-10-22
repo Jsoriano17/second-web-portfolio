@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import AdventureLog from './Projects/AdventureLog'
+import FirstPortfolio from './Projects/FirstPortfolio'
 import HomeInventory from './Projects/HomeInventory'
 import Reactivities from './Projects/Reactivities'
 
@@ -11,6 +12,7 @@ export const Projects = () => {
             <Reactivities />
             <HomeInventory />
             <AdventureLog />
+            <FirstPortfolio />
         </Container>
     )
 }
