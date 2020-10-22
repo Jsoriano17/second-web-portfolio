@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import AdventureLog from './Projects/AdventureLog'
+import HomeInventory from './Projects/HomeInventory'
+import Reactivities from './Projects/Reactivities'
 
 export const Projects = () => {
     return (
         <Container>
             <StyledH1>Projects</StyledH1>
+            <Reactivities />
+            <HomeInventory />
             <AdventureLog />
         </Container>
     )
@@ -13,7 +17,7 @@ export const Projects = () => {
 
 const Container = styled.div`
     width: 100%;
-    height: 1000px;
+    height: 5000px;
     position: relative; 
     overflow: auto;
 `

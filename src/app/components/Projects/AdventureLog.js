@@ -22,7 +22,7 @@ const AdventureLog = () => {
                 <li>MobX</li>
                 <li>TypeScript</li>
                 <li>C#</li>
-                <li>ASP.NET</li>
+                <li>ASP.NET Core</li>
                 <li>EntityFramework Core</li>
                 <li>Adobe Suite</li>
             </StyledUl>
@@ -36,13 +36,13 @@ export default AdventureLog
 const StyledImg = styled.img`
     position: absolute;
     width: 1100px;
-    top: 0;
+    top: 900px;
     left: -36vw;
     z-index: 0;
 `
 const StyledP = styled.p`
     font-size: 15px; 
-    margin-top: 185px;
+    margin-top: 295px;
     margin-left: 210px;
     position: relative;
     z-index: 2;
