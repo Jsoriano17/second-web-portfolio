@@ -45,7 +45,7 @@ const StyledP = styled.p`
 const StyledUl = styled.ul`
     font-size: 17px; 
     font-weight: bold;
-    margin-top: 22px;
+    margin-top: 21px;
     margin-left: 980px;
     position: relative;
     color: white;
