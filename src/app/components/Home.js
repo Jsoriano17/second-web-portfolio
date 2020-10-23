@@ -45,7 +45,7 @@ const Container = styled.div`
     justify-content: space-between;
     overflow: hidden;
     background: white;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
 `
 const StyledAnimation = styled.div`
     opacity: 0;
