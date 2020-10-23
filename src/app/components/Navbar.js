@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const Navbar = () => {
     const [index, setIndex] = useState(1);
 
-    setTimeout(function(){ setIndex(2) }, 3200)
+    setTimeout(function(){ setIndex(2) }, 3400)
     return (
         <>
             <Container style={{zIndex: index}}>

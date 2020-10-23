@@ -4,15 +4,26 @@ import AdventureLog from './Projects/AdventureLog'
 import FirstPortfolio from './Projects/FirstPortfolio'
 import HomeInventory from './Projects/HomeInventory'
 import Reactivities from './Projects/Reactivities'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export const Projects = () => {
     return (
         <Container>
-            <StyledH1>Projects</StyledH1>
-            <Reactivities />
-            <HomeInventory />
-            <AdventureLog />
-            <FirstPortfolio />
+            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                <StyledH1>Projects</StyledH1>
+            </ScrollAnimation>
+            <ScrollAnimation offset={3000}  animateIn='animate__fadeIn' animateOnce={true} >
+                <Reactivities />
+            </ScrollAnimation>
+            <ScrollAnimation offset={3000}  animateIn='animate__fadeIn' animateOnce={true}>
+                <HomeInventory />
+            </ScrollAnimation>
+            <ScrollAnimation offset={3000}  animateIn='animate__fadeIn' animateOnce={true}>
+                <AdventureLog />
+            </ScrollAnimation>
+            <ScrollAnimation offset={3000}  animateIn='animate__fadeIn' animateOnce={true}>
+                <FirstPortfolio />
+            </ScrollAnimation>
         </Container>
     )
 }

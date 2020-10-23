@@ -63,6 +63,7 @@ const Container = styled.div`
     margin-left: 280px;
     font-size: 12px; 
     font-weight: bold;
+
 `
 const StyledUl = styled.ul`
     list-style: none;
