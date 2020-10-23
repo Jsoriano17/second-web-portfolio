@@ -11,8 +11,8 @@ const FirstPortfolio = () => {
                 the first portfolio site I made to <br /> 
                 display all my projects. The web- <br />
                 site was made with very bare bone <br />
-                tech and developer tools. Looking back at my first <br /> 
-                site shows how much I've learned and advanced. 
+                tech and developer tools. Looking back at my first site <br /> 
+                shows how much I've learned and advanced as a developer. 
             </StyledP>
             <StyledUl>
                 <StyledLi>HTML</StyledLi>
