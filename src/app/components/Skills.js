@@ -1,37 +1,28 @@
-import React, { useState } from 'react'
-import background from '../assets/my-skills-back.png'
+import React from 'react';
+import background from '../assets/my-skills-back.png';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
+import FrontEnd from './skill-sections/FrontEnd';
+
 
 export const Skills = () => {
-    // const [tester, setTester] = useState(true);
-    // const [boop, setBoop] = useState(still);
-
-    // const changeGif = () => {
-
-    //     if (tester) {
-
-    //         setBoop(something)
-    //         setTester(!tester)
-    //     } else {
-    //         setBoop(still)
-    //         setTester(!tester)
-    //     }
-
-    // }
     return (
-        <div>
+        <Container>
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                <img src={background} width="100%" />
+                <FrontEnd /> 
+                <StyledBackground src={background} width="100%" />
             </ScrollAnimation>
-        </div>
+        </Container>
     )
 }
 
-const StyledH1 = styled.h1`
-    font-family: Impact_Label;
-    font-size: 90px;
-    color: black;
-    margin-left: 5vw;
+const Container = styled.div`
+    position: relative;
 `
 
+const StyledBackground = styled.img`
+    position: absolute; 
+    top: 1px;
+    left: 0;
+    z-index: 0;
+`
