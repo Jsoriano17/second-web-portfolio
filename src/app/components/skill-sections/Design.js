@@ -43,6 +43,14 @@ const Design = () => {
             />
             <DesignStill src={designStill} style={{ display: dDisplay }} />
             <DesignSec src={dEG} />
+            <StyledH1>Design</StyledH1>
+            <StyledUl>
+                <li>Adobe PhotoShop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe After Effects</li>
+                <li>Figma</li>
+                <li>Responsive Design</li>
+            </StyledUl>
         </>
     )
 }
@@ -54,7 +62,7 @@ const DesignSec = styled.img`
     width: 449px;
     position: absolute;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 `
 const ClickBox = styled.div`
     width: 200px;
@@ -62,7 +70,7 @@ const ClickBox = styled.div`
     background: black;
     cursor: pointer; 
     position: absolute; 
-    z-index: 3;
+    z-index: 4;
     top: 100px;
     right: 110px;
     opacity: 0;
@@ -70,8 +78,27 @@ const ClickBox = styled.div`
 const DesignStill = styled.img`
     height: 706px;
     width: 449px;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     position: absolute; 
+`
+const StyledH1 = styled.h1`
+    font-family: Impact_Label;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    position: absolute; 
+    top: 120px;
+    right: 150px;
+    z-index: 1;
+`
+const StyledUl = styled.ul`
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    position: absolute; 
+    top: 180px;
+    right: 120px;
+    z-index: 1;
 `

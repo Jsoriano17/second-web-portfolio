@@ -43,6 +43,21 @@ const BackEnd = () => {
             />
             <BackEndStill src={backEndStill} style={{ display: bDisplay }} />
             <BackEndSec src={bEG} />
+            <StyledH1>Back_End</StyledH1>
+            <StyledUl>
+                <li>C#</li>
+                <li>ASP.NET Core</li>
+                <li>ASP.NET Identity</li>
+                <li>ASP.NET MVC</li>
+                <li>EF Core</li>
+                <li>Ruby</li>
+                <li>Ruby On Rails</li>
+                <li>Devise</li>
+                <li>SQL</li>
+                <li>Postgres</li>
+                <li>SQLite</li>
+                <li>MySQL</li>
+            </StyledUl>
         </>
     )
 }
@@ -54,7 +69,7 @@ const BackEndSec = styled.img`
     width: 449.5px;
     position: absolute;
     left: 415.4px;
-    z-index: 1;
+    z-index: 2;
 `
 const ClickBox = styled.div`
     width: 200px;
@@ -62,7 +77,7 @@ const ClickBox = styled.div`
     background: black;
     cursor: pointer; 
     position: absolute; 
-    z-index: 3;
+    z-index: 4;
     top: 100px;
     left: 550px;
     opacity: 0;
@@ -70,8 +85,27 @@ const ClickBox = styled.div`
 const BackEndStill = styled.img`
     height: 706px;
     width: 449.5px;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 415.4px;
     position: absolute; 
+`
+const StyledH1 = styled.h1`
+    font-family: Impact_Label;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    position: absolute; 
+    top: 120px;
+    left: 585px;
+    z-index: 1;
+`
+const StyledUl = styled.ul`
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    position: absolute; 
+    top: 180px;
+    left: 545px;
+    z-index: 1;
 `
