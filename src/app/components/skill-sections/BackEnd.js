@@ -7,8 +7,8 @@ import styled from 'styled-components';
 const BackEnd = () => {
 
     const [opener, setOpener] = useState(true);
-    const [bEG, setFEG] = useState(backEndReversed);
-    const [bDisplay, setFDisplay] = useState('block');
+    const [bEG, setBEG] = useState(backEndReversed);
+    const [bDisplay, setBDisplay] = useState('block');
     const [gifDisplay, setGifDisplay] = useState('block')
 
     useEffect(() => {
@@ -16,12 +16,12 @@ const BackEnd = () => {
     }, [])
 
     const changeGif = () => {
-        setFDisplay('none')
+        setBDisplay('none')
         if (opener) {
-            setFEG(backEnd)
+            setBEG(backEnd)
             setOpener(!opener)
         } else {
-            setFEG(backEndReversed)
+            setBEG(backEndReversed)
             setOpener(!opener)
         }
     }
