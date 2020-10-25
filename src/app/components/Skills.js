@@ -3,6 +3,7 @@ import background from '../assets/my-skills-back.png';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FrontEnd from './skill-sections/FrontEnd';
+import BackEnd from './skill-sections/BackEnd';
 
 
 export const Skills = () => {
@@ -10,6 +11,7 @@ export const Skills = () => {
         <Container>
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                 <FrontEnd /> 
+                <BackEnd />
                 <StyledBackground src={background} width="100%" />
             </ScrollAnimation>
         </Container>
