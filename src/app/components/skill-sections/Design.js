@@ -1,11 +1,77 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import design from '../../assets/design-gif.gif';
+import designReversed from '../../assets/design-gif-reversed.gif'
+import designStill from '../../assets/design-still.png'
+import styled from 'styled-components';
 
 const Design = () => {
+
+    const [opener, setOpener] = useState(true);
+    const [dEG, setDEG] = useState(designReversed);
+    const [dDisplay, setDDisplay] = useState('block');
+    const [gifDisplay, setGifDisplay] = useState('block')
+
+    useEffect(() => {
+        gifTimeOut()
+    }, [])
+
+    const changeGif = () => {
+        setDDisplay('none')
+        if (opener) {
+            setDEG(design)
+            setOpener(!opener)
+        } else {
+            setDEG(designReversed)
+            setOpener(!opener)
+        }
+    }
+
+    const gifTimeOut = () => {
+        setGifDisplay('none')
+        setTimeout(() => {
+            setGifDisplay('block')
+        }, 1500);
+    }
     return (
-        <div>
-            design
-        </div>
+        <>
+            <ClickBox
+                onClick={() => {
+                    changeGif()
+                    gifTimeOut()
+                }}
+                style={{ display: gifDisplay }}
+            />
+            <DesignStill src={designStill} style={{ display: dDisplay }} />
+            <DesignSec src={dEG} />
+        </>
     )
 }
 
 export default Design
+
+const DesignSec = styled.img`
+    height: 706px;
+    width: 449px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+`
+const ClickBox = styled.div`
+    width: 200px;
+    height: 500px; 
+    background: black;
+    cursor: pointer; 
+    position: absolute; 
+    z-index: 3;
+    top: 100px;
+    right: 110px;
+    opacity: 0;
+`
+const DesignStill = styled.img`
+    height: 706px;
+    width: 449px;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    position: absolute; 
+`
