@@ -66,7 +66,7 @@ export default FrontEnd
 const FrontEndSec = styled.img`
     height: 706px;
     width: 449.5px;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
 `
 const ClickBox = styled.div`
@@ -75,7 +75,7 @@ const ClickBox = styled.div`
     background: black;
     cursor: pointer; 
     position: absolute; 
-    z-index: 4;
+    z-index: 5;
     top: 100px;
     left: 110px;
     opacity: 0;
@@ -83,7 +83,7 @@ const ClickBox = styled.div`
 const FrontEndStill = styled.img`
     height: 706px;
     width: 449.5px;
-    z-index: 3;
+    z-index: 4;
     position: absolute; 
 `
 const StyledH1 = styled.h1`
@@ -94,7 +94,7 @@ const StyledH1 = styled.h1`
     position: absolute; 
     top: 120px;
     left: 130px;
-    z-index: 1;
+    z-index: 2;
 `
 const StyledUl = styled.ul`
     font-size: 22px;
@@ -103,7 +103,7 @@ const StyledUl = styled.ul`
     position: absolute; 
     top: 175px;
     left: 110px;
-    z-index: 1;
+    z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     opacity: 0.7; 

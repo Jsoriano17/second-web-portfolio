@@ -68,7 +68,7 @@ const BackEndSec = styled.img`
     width: 449.5px;
     position: absolute;
     left: 415.4px;
-    z-index: 2;
+    z-index: 3;
 `
 const ClickBox = styled.div`
     width: 200px;
@@ -76,7 +76,7 @@ const ClickBox = styled.div`
     background: black;
     cursor: pointer; 
     position: absolute; 
-    z-index: 4;
+    z-index: 5;
     top: 100px;
     left: 550px;
     opacity: 0;
@@ -84,7 +84,7 @@ const ClickBox = styled.div`
 const BackEndStill = styled.img`
     height: 706px;
     width: 449.5px;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     left: 415.4px;
     position: absolute; 
@@ -97,7 +97,7 @@ const StyledH1 = styled.h1`
     position: absolute; 
     top: 120px;
     left: 585px;
-    z-index: 1;
+    z-index: 2;
 `
 const StyledUl = styled.ul`
     font-size: 22px;
@@ -106,7 +106,7 @@ const StyledUl = styled.ul`
     position: absolute; 
     top: 175px;
     left: 560px;
-    z-index: 1;
+    z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     opacity: 0.7; 

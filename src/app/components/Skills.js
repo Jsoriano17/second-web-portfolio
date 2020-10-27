@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import FrontEnd from './skill-sections/FrontEnd';
 import BackEnd from './skill-sections/BackEnd';
 import Design from './skill-sections/Design';
-
+import shadow from '../assets/paper-background-shading.png';
 
 export const Skills = () => {
     return (
@@ -15,6 +15,7 @@ export const Skills = () => {
                 <BackEnd />
                 <Design />
                 <StyledBackground src={background} width="100%" />
+                <BackgroundShading src={shadow} width='100%' />
             </ScrollAnimation>
         </Container>
     )
@@ -29,5 +30,14 @@ const StyledBackground = styled.img`
     position: absolute; 
     top: 1px;
     left: 0;
-    z-index: 0;
+    z-index: 1;
+`
+const BackgroundShading = styled.img`
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    z-index: 0; 
+    width: 100%;
+    height: 110vh;
+    opacity: .5;
 `
