@@ -55,7 +55,6 @@ const BackEnd = () => {
                 <li>Devise</li>
                 <li>SQL</li>
                 <li>Postgres</li>
-                <li>SQLite</li>
                 <li>MySQL</li>
             </StyledUl>
         </>
@@ -101,11 +100,14 @@ const StyledH1 = styled.h1`
     z-index: 1;
 `
 const StyledUl = styled.ul`
-    font-size: 20px;
+    font-size: 22px;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 180px;
-    left: 545px;
+    top: 175px;
+    left: 560px;
     z-index: 1;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    opacity: 0.7; 
 `

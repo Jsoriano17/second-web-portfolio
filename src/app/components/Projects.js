@@ -10,7 +10,7 @@ export const Projects = () => {
     return (
         <Container>
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                <StyledH1>Projects</StyledH1>
+                <StyledH1 id="projects">Projects</StyledH1>
             </ScrollAnimation>
             <ScrollAnimation offset={3000}  animateIn='animate__fadeIn' animateOnce={true} >
                 <Reactivities />
@@ -25,7 +25,7 @@ export const Projects = () => {
                 <FirstPortfolio />
             </ScrollAnimation>
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                <StyledH12>My_Skills</StyledH12>
+                <StyledH12 id="skills">My_Skills</StyledH12>
             </ScrollAnimation>
         </Container>
     )

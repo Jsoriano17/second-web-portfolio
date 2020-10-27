@@ -16,7 +16,7 @@ export const WebLayout = () => {
             <Home />
             <Projects />
             <Skills />
-            <Contacts />
+            <Contacts/>
             <BackTop />
         </Container>
     )

@@ -1,26 +1,64 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link } from "react-scroll";
+
 
 
 export const Navbar = () => {
     const [index, setIndex] = useState(1);
 
-    setTimeout(function(){ setIndex(2) }, 3400)
+    setTimeout(function () { setIndex(2) }, 3400)
     return (
         <>
-            <Container style={{zIndex: index}}>
+            <Container style={{ zIndex: index }}>
                 <StyledNav>
                     <StyledUl>
-                        <StyledLi style={{ color: 'black' }}>Projects</StyledLi>
-                        <StyledLi>Skills</StyledLi>
-                        <StyledLi>Contacts</StyledLi>
+                        <StyledLi style={{ color: 'black' }}>
+                            <Link
+                                activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-40}
+                                duration={500}
+                                style={{ color: 'black' }}
+                            >
+                                Projects
+                            </Link>
+                        </StyledLi>
+                        <StyledLi>
+                            <Link
+                                activeClass="active"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-40}
+                                duration={500}
+                                style={{ color: 'black' }}
+                            >
+                                Skills
+                            </Link>
+                        </StyledLi>
+                        <StyledLi>
+                            <Link
+                                activeClass="active"
+                                to="contacts"
+                                spy={true}
+                                smooth={true}
+                                offset={-40}
+                                duration={500}
+                                style={{ color: 'black' }}
+                            >
+                                Contacts
+                            </Link>
+                        </StyledLi>
                         <StyledLi>Resume</StyledLi>
                     </StyledUl>
                 </StyledNav>
             </Container>
-            <ContainerRight style={{zIndex: index}}>
-                <StyledAbout as={Link} to='/about'>About-{">"}</StyledAbout>
+            <ContainerRight style={{ zIndex: index }}>
+                <StyledAbout as={RouterLink} to='/about'>About-{">"}</StyledAbout>
             </ContainerRight>
         </>
     )
