@@ -12,7 +12,7 @@ const ContactIcons = () => {
         <Container>
             <StyledAnchor href="https://www.linkedin.com/in/jeffrey-soriano/" target="_blank"><img src={linkedin} width="55px" /></StyledAnchor>
             <StyledAnchor href="https://github.com/Jsoriano17" target="_blank"><img src={github} width="55px" /></StyledAnchor>
-            <StyledAnchor href="" target="_blank"><img src={gmail} width="55px" /></StyledAnchor>
+            <StyledAnchor><img src={gmail} width="55px" /></StyledAnchor>
             <StyledAnchor href="https://www.facebook.com/SoriaDesigns/" target="_blank"><img src={facebook} width="55px" /></StyledAnchor>
             <StyledAnchor href="https://twitter.com/SoriaDesigns" target="_blank"><img src={twitter} width="55px" /></StyledAnchor>
             <StyledAnchor href="https://www.instagram.com/soriadesigns/" target="_blank"><img src={instagram} width="55px" /></StyledAnchor>

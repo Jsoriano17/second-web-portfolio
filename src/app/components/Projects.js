@@ -49,4 +49,5 @@ const StyledH12 = styled.h1`
     font-size: 90px;
     color: black;
     margin-left: 5vw;
+    
 `
