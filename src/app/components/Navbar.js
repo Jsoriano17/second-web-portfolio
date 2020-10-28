@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link } from "react-scroll";
+import ResumePDF from '../assets/Resume.pdf'
 
 
 
@@ -53,7 +54,15 @@ export const Navbar = () => {
                                 Contacts
                             </Link>
                         </StyledLi>
-                        <StyledLi>Resume</StyledLi>
+                        <StyledLi>
+                            <a
+                                style={{ color: 'black' }}
+                                href={ResumePDF}
+                                target='_blank'
+                            >
+                                Resume
+                                </a>
+                        </StyledLi>
                     </StyledUl>
                 </StyledNav>
             </Container>
