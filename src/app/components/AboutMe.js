@@ -9,10 +9,10 @@ export const AboutMe = () => {
                 <StyledMag />
                 <ContainerCol >
                     <StyledH1 id="projects">About_Me</StyledH1>
-                    <p>Do dolore adipisicing esse culpa eiusmod consectetur qui. Esse eiusmod commodo labore veniam elit voluptate excepteur esse magna qui consequat occaecat velit. Esse incididunt incididunt ad laboris. Sit in aute amet id reprehenderit culpa. Tempor deserunt do reprehenderit commodo labore excepteur fugiat tempor dolore commodo laboris.</p>
+                    <p>Hi! I'm Jeffrey Soriano. I'm a full-stack web developer.  I've put lots of time into learning the required skills to become a professional full-stack web developer. Countless hours have been put into strengthening my skills to develop clean, good looking back, and front end code for websites. Every day I'm learning new technologies to implement into my code. I believe that all the projects I've created or worked on have strengthened my abilities as a developer. I have lots of experience with graphic design and design principles. I look forward to learning new skills, working on bigger things, and sharing the many cool ideas I have in mind for future projects.</p>
                 </ContainerCol>
             </Container>
-            <StyledLink as={Link} to='/'>{'<-'} go_back</StyledLink>
+            <StyledLink as={Link} to='/'>{'<-'}go_back</StyledLink>
         </>
     )
 }
@@ -42,7 +42,7 @@ const ContainerCol = styled.div`
 `
 const StyledMag = styled.div`
     background: black;
-    width: 1700px; 
+    width: 3500px; 
     height: 600px;
     margin-right: 100px;
 `
