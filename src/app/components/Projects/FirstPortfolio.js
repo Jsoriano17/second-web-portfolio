@@ -23,7 +23,7 @@ const FirstPortfolio = () => {
             </StyledUl>
             <StyledImg src={magazine} />
             <StyledGif src={firstPortfolioGif} />
-            <a href="https://soriadesign.com" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+            <a href="https://jeffreysorianoportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                 <ClickBox />
             </a>
         </>
