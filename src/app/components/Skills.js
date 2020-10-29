@@ -23,12 +23,12 @@ export const Skills = () => {
 
 const Container = styled.div`
     position: relative;
-    height: 750px;
+    height: 109.01162790697674vh;
 `
 
 const StyledBackground = styled.img`
     position: absolute; 
-    top: 1px;
+    top:  0.14534883720930233vh;
     left: 0;
     z-index: 1;
 `

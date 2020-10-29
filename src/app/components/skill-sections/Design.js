@@ -53,40 +53,40 @@ const Design = () => {
 export default Design
 
 const DesignSec = styled.img`
-    height: 706px;
-    width: 449px;
+    height: 102.61627906976744vh;
+    width: 35.078125vw;
     position: absolute;
     right: 0;
     z-index: 3;
 `
 const ClickBox = styled.div`
-    width: 200px;
-    height: 500px; 
+    width: 15.625vw;
+    height: 72.67441860465117vh; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 100px;
-    right: 110px;
+    top: 14.534883720930232vh;
+    right: 8.59375vw;
     opacity: 0;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 35px;
+    font-size: 2.734375vw;
     color: black;
     text-align: center;
     position: absolute; 
-    top: 120px;
-    right: 150px;
+    top: 17.441860465116278vh;
+    right: 11.71875vw;
     z-index: 2;
 `
 const StyledUl = styled.ul`
-    font-size: 22px;
+    font-size: 1.71875vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 175px;
-    right: 160px;
+    top: 25.436046511627907vh;
+    right: 12.5vw;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;

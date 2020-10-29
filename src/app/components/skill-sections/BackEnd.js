@@ -60,40 +60,40 @@ const BackEnd = () => {
 export default BackEnd
 
 const BackEndSec = styled.img`
-    height: 706px;
-    width: 449.5px;
+    height: 102.61627906976744vh;
+    width: 35.1171875vw;
     position: absolute;
-    left: 415.4px;
+    left: 32.453125vw;
     z-index: 3;
 `
 const ClickBox = styled.div`
-    width: 200px;
-    height: 500px; 
+    width: 15.625vw;
+    height: 72.67441860465117vh; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 100px;
-    left: 550px;
+    top: 14.534883720930232vh;
+    left: 42.96875vw;
     opacity: 0;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 35px;
+    font-size: 2.734375vw;
     color: black;
     text-align: center;
     position: absolute; 
-    top: 120px;
-    left: 585px;
+    top: 17.441860465116278vh;
+    left: 45.703125vw;
     z-index: 2;
 `
 const StyledUl = styled.ul`
-    font-size: 22px;
+    font-size: 1.71875vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 175px;
-    left: 560px;
+    top: 25.436046511627907vh;
+    left: 46.875vw;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
