@@ -5,10 +5,7 @@ import backEndStill from '../../assets/back-end-still.png'
 import styled from 'styled-components';
 
 const BackEnd = () => {
-
-    const [opener, setOpener] = useState(true);
-    const [bEG, setBEG] = useState(backEndReversed);
-    const [bDisplay, setBDisplay] = useState('block');
+    const [bEG, setBEG] = useState(backEndStill);
     const [gifDisplay, setGifDisplay] = useState('block')
 
     useEffect(() => {
@@ -16,15 +13,15 @@ const BackEnd = () => {
     }, [])
 
     const changeGif = () => {
-        setBDisplay('none')
-        if (opener) {
+        if (bEG === backEndStill) {
             setBEG(backEnd)
-            setOpener(!opener)
-        } else {
+        } else if (bEG === backEnd) {
             setBEG(backEndReversed)
-            setOpener(!opener)
+        } else {
+            setBEG(backEnd)
         }
     }
+
 
     const gifTimeOut = () => {
         setGifDisplay('none')
@@ -41,7 +38,6 @@ const BackEnd = () => {
                 }}
                 style={{ display: gifDisplay }}
             />
-            <BackEndStill src={backEndStill} style={{ display: bDisplay }} />
             <BackEndSec src={bEG} />
             <StyledH1>Back_End</StyledH1>
             <StyledUl>
@@ -80,14 +76,6 @@ const ClickBox = styled.div`
     top: 100px;
     left: 550px;
     opacity: 0;
-`
-const BackEndStill = styled.img`
-    height: 706px;
-    width: 449.5px;
-    z-index: 4;
-    top: 0;
-    left: 415.4px;
-    position: absolute; 
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;

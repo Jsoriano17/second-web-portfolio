@@ -6,23 +6,25 @@ import styled from 'styled-components';
 
 const FrontEnd = () => {
 
-    const [opener, setOpener] = useState(true);
-    const [fEG, setFEG] = useState(frontEndReversed);
-    const [fDisplay, setFDisplay] = useState('block');
+    const [fEG, setFEG] = useState(frontEndStill);
     const [gifDisplay, setGifDisplay] = useState('block')
 
     useEffect(() => {
         gifTimeOut()
     }, [])
 
+    //it flashes the last from of the alternate gif
+
     const changeGif = () => {
-        setFDisplay('none')
-        if (opener) {
+        if (fEG === frontEndStill) {
+            console.log('changed from still to rip down')
             setFEG(frontEnd)
-            setOpener(!opener)
-        } else {
+        } else if (fEG === frontEnd) {
+            console.log('changed from rip down to reversed')
             setFEG(frontEndReversed)
-            setOpener(!opener)
+        } else {
+            console.log('changed from reversed to rip down')
+            setFEG(frontEnd)
         }
     }
 
@@ -41,7 +43,6 @@ const FrontEnd = () => {
                 }}
                 style={{ display: gifDisplay }}
             />
-            <FrontEndStill src={frontEndStill} style={{ display: fDisplay }} />
             <FrontEndSec src={fEG} />
             <StyledH1>Front_End</StyledH1>
             <StyledUl>
@@ -79,12 +80,6 @@ const ClickBox = styled.div`
     top: 100px;
     left: 110px;
     opacity: 0;
-`
-const FrontEndStill = styled.img`
-    height: 706px;
-    width: 449.5px;
-    z-index: 4;
-    position: absolute; 
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;

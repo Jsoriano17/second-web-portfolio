@@ -36,7 +36,7 @@ const Reactivities = () => {
             </Container>
             <StyledImg src={magazine} />
             <StyledGif src={reactivitiesGif} />
-            <a href="https://github.com/Jsoriano17/Reactivities" target="_blank" style={{ color: 'black' }}>
+            <a href="https://github.com/Jsoriano17/Reactivities" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                 <ClickBox />
             </a>
         </>

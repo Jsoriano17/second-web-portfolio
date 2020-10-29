@@ -59,6 +59,7 @@ export const Navbar = () => {
                                 style={{ color: 'black' }}
                                 href={ResumePDF}
                                 target='_blank'
+                                rel="noopener noreferrer"
                             >
                                 Resume
                                 </a>

@@ -30,7 +30,7 @@ const HomeInventory = () => {
             </StyledUl>
             <StyledImg src={magazine} />
             <StyledGif src={homeInventoryGif} />
-            <a href="https://home-inventory-website.herokuapp.com/" target="_blank" style={{ color: 'black' }}>
+            <a href="https://home-inventory-website.herokuapp.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                 <ClickBox />
             </a>
 

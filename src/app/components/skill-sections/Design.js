@@ -5,10 +5,7 @@ import designStill from '../../assets/design-still.png'
 import styled from 'styled-components';
 
 const Design = () => {
-
-    const [opener, setOpener] = useState(true);
-    const [dEG, setDEG] = useState(designReversed);
-    const [dDisplay, setDDisplay] = useState('block');
+    const [dEG, setDEG] = useState(designStill);
     const [gifDisplay, setGifDisplay] = useState('block')
 
     useEffect(() => {
@@ -16,13 +13,12 @@ const Design = () => {
     }, [])
 
     const changeGif = () => {
-        setDDisplay('none')
-        if (opener) {
+        if (dEG === designStill) {
             setDEG(design)
-            setOpener(!opener)
-        } else {
+        } else if (dEG === design) {
             setDEG(designReversed)
-            setOpener(!opener)
+        } else {
+            setDEG(design)
         }
     }
 
@@ -41,7 +37,6 @@ const Design = () => {
                 }}
                 style={{ display: gifDisplay }}
             />
-            <DesignStill src={designStill} style={{ display: dDisplay }} />
             <DesignSec src={dEG} />
             <StyledH1>Design</StyledH1>
             <StyledUl>
@@ -74,14 +69,6 @@ const ClickBox = styled.div`
     top: 100px;
     right: 110px;
     opacity: 0;
-`
-const DesignStill = styled.img`
-    height: 706px;
-    width: 449px;
-    z-index: 4;
-    top: 0;
-    right: 0;
-    position: absolute; 
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
