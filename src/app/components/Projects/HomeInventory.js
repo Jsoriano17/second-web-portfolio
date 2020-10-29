@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import magazine from '../../assets/magazines/homeInventory.png'
+import homeInventoryGif from '../../assets/home-inventory-gif.gif'
 
 const HomeInventory = () => {
     return (
@@ -28,6 +29,7 @@ const HomeInventory = () => {
                 <li>Devise</li>
             </StyledUl>
             <StyledImg src={magazine} />
+            <StyledGif src={homeInventoryGif} />
         </>
     )
 }
@@ -39,7 +41,16 @@ const StyledImg = styled.img`
     width: 1100px;
     top: 200px;
     right: -36vw;
+    z-index: 1;
+`
+const StyledGif = styled.img`
+    position: absolute;
+    width: 282px;
+    height: 158px;
+    top: 379px;
+    right: 247px;
     z-index: 0;
+    transform: rotate(-0.5deg);
 `
 const StyledP = styled.p`
     font-size: 15px; 
@@ -48,7 +59,7 @@ const StyledP = styled.p`
     color: #e3e3e3;
     position: relative;
     text-indent: 20px;
-    z-index: 2;
+    z-index: 3;
 `
 const StyledUl = styled.ul`
     font-size: 17px; 
@@ -57,5 +68,5 @@ const StyledUl = styled.ul`
     margin-right: 350px;
     position: relative;
     direction: rtl;
-    z-index: 2; 
+    z-index: 3; 
 `

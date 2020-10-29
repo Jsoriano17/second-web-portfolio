@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import magazine from '../../assets/magazines/reactivities.png'
+import reactivitiesGif from '../../assets/reactivities-gif.gif'
 
 const Reactivities = () => {
     return (
@@ -34,6 +35,7 @@ const Reactivities = () => {
                 </StyledUl2>
             </Container>
             <StyledImg src={magazine} />
+            <StyledGif src={reactivitiesGif} />
         </>
     )
 }
@@ -45,6 +47,14 @@ const StyledImg = styled.img`
     width: 1100px;
     top: 0;
     left: -36vw;
+    z-index: 1;
+`
+const StyledGif = styled.img`
+    position: absolute;
+    width: 270px;
+    height: 169px;
+    top: 93px;
+    left: 264px;
     z-index: 0;
 `
 const StyledP = styled.p`
@@ -54,7 +64,7 @@ const StyledP = styled.p`
     position: relative;
     color: #b3b3b3;
     text-indent: 20px;
-    z-index: 2;
+    z-index: 3;
 `
 const Container = styled.div`
     display: flex; 
@@ -70,12 +80,12 @@ const StyledUl = styled.ul`
     margin-Right: 43px;
     position: relative;
     color: #1b1b1b;
-    z-index: 2; 
+    z-index: 3; 
 `
 const StyledUl2 = styled.ul`
     list-style: none;
     position: relative;
     color: #1b1b1b;
-    z-index: 2; 
+    z-index: 3; 
 `
 

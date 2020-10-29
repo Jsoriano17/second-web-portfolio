@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import magazine from '../../assets/magazines/first-portfolio.png'
+import firstPortfolioGif from '../../assets/first-portfolio-gif.gif'
 
 const FirstPortfolio = () => {
     return (
@@ -21,6 +22,7 @@ const FirstPortfolio = () => {
                 <StyledLi>Adobe Suite</StyledLi>
             </StyledUl>
             <StyledImg src={magazine} />
+            <StyledGif src={firstPortfolioGif} />
         </>
     )
 }
@@ -32,6 +34,14 @@ const StyledImg = styled.img`
     width: 1100px;
     top: 1100px;
     right: -36vw;
+    z-index: 1;
+`
+const StyledGif = styled.img`
+    position: absolute;
+    width: 235px;
+    height: 130px;
+    top: 1670px;
+    right: 312px;
     z-index: 0;
 `
 const StyledP = styled.p`
@@ -40,7 +50,7 @@ const StyledP = styled.p`
     margin-left: 735px;
     color: black;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 `
 const StyledUl = styled.ul`
     font-size: 17px; 
@@ -50,7 +60,7 @@ const StyledUl = styled.ul`
     position: relative;
     color: white;
     list-style-type: none;
-    z-index: 2; 
+    z-index: 3; 
 `
 
 const StyledLi = styled.li`
