@@ -40,46 +40,46 @@ export default AdventureLog
 
 const StyledImg = styled.img`
     position: absolute;
-    width: 1100px;
-    top: 900px;
+    width: 85.9375vw;
+    top: 130.8139534883721vh;
     left: -36vw;
     z-index: 1;
 `
 const StyledGif = styled.img`
     position: absolute;
-    width: 185px;
-    left: 175px;
-    height: 400px;
-    top: 1215px;
+    width: 14.453125vw;
+    left: 13.671875vw;
+    height: 58.13953488372093vh;
+    top: 176.59883720930233vh;
     z-index: 0;
 `
 const ClickBox = styled.div`
     position: absolute;
-    width: 185px;
-    left: 175px;
-    height: 400px;
-    top: 1215px;
+    width: 14.453125vw;
+    left: 13.671875vw;
+    height: 58.13953488372093vh;
+    top: 176.59883720930233vh;
     opacity: 0;
     z-index: 3;
 `
 const StyledP = styled.p`
-    font-size: 15px; 
-    margin-top: 110px;
-    margin-left: 210px;
+    font-size: 1.171875vw; 
+    margin-top: 15.988372093023257vh;
+    margin-left: 16.40625vw;
     position: relative;
     z-index: 3;
 `
 const StyledP2 = styled.p`
-    font-size: 15px; 
-    margin-top: 75px;
-    margin-left: 415px;
+    font-size: 1.171875vw; 
+    margin-top: 10.901162790697674vh;
+    margin-left: 32.421875vw;
     position: relative;
     z-index: 3; 
 `
 const StyledUl = styled.ul`
-    font-size: 14px; 
+    font-size:  1.09375vw; 
     margin-top: 0px;
-    margin-left: 395px;
+    margin-left: 34.375vw;
     position: relative;
     z-index: 3; 
 `
