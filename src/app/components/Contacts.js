@@ -11,7 +11,7 @@ export const Contacts = () => {
                 <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
                 <StyledForm>
                     <StyledNameInput required />
-                    <StyledEmailInput required />
+                    <StyledEmailInput type="email" required />
                     <StyledMessageInput required />
                     <StyledSubmit type="submit" value="Submit" />
                 </StyledForm>
