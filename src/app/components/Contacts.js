@@ -10,10 +10,10 @@ export const Contacts = () => {
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                 <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
                 <StyledForm>
-                    <StyledNameInput />
-                    <StyledEmailInput />
-                    <StyledMessageInput />
-                    <StyledSubmit type="submit" value="Submit"/>
+                    <StyledNameInput required />
+                    <StyledEmailInput required />
+                    <StyledMessageInput required />
+                    <StyledSubmit type="submit" value="Submit" />
                 </StyledForm>
                 <Magazine src={ContactMag} />
                 <Envelope src={EnvelopePic} />
@@ -81,6 +81,7 @@ const StyledSubmit = styled.input`
     border: 1px solid black;
     background: transparent;
     margin-left: 872px;
+    cursor: pointer;
 `
 
 const Magazine = styled.img`
