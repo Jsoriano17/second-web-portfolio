@@ -47,49 +47,49 @@ export default Reactivities
 
 const StyledImg = styled.img`
     position: absolute;
-    width: 1100px;
+    width: 85.9375vw;
     top: 0;
     left: -36vw;
     z-index: 1;
 `
 const StyledGif = styled.img`
     position: absolute;
-    width: 270px;
-    height: 169px;
-    top: 93px;
-    left: 264px;
+    width: 21.09375vw;
+    height: 24.563953488372093vh;
+    top: 13.517441860465116vh;
+    left: 20.625vw;
     z-index: 0;
 `
 const ClickBox = styled.div`
     position: absolute;
-    width: 270px;
-    height: 169px;
-    top: 93px;
-    left: 264px;
+    width: 21.09375vw;
+    height: 24.563953488372093vh;
+    top: 13.517441860465116vh;
+    left: 20.625vw;
     opacity: 0;
     z-index: 3;
 `
 const StyledP = styled.p`
-    font-size: 15px; 
-    margin-top: 353px;
-    margin-left: 255px;
+    font-size: 1.171875vw; 
+    margin-top:  51.30813953488372vh;
+    margin-left:  19.921875vw;
     position: relative;
     color: #b3b3b3;
-    text-indent: 20px;
+    text-indent: 1.5625vw;
     z-index: 3;
 `
 const Container = styled.div`
     display: flex; 
     flex-direction: row;
-    margin-top: 133px;
-    margin-left: 280px;
-    font-size: 12px; 
+    margin-top: 19.33139534883721vh;
+    margin-left: 25vw;
+    font-size: 0.9375vw; 
     font-weight: bold;
 
 `
 const StyledUl = styled.ul`
     list-style: none;
-    margin-Right: 43px;
+    margin-Right: 6.640625vw;
     position: relative;
     color: #1b1b1b;
     z-index: 3; 

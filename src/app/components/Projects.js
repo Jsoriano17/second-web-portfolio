@@ -33,20 +33,20 @@ export const Projects = () => {
 
 const Container = styled.div`
     width: 100%;
-    height: 2010px;
+    height: 292.1511627906977vh;
     position: relative; 
     overflow: hidden;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 90px;
+    font-size: 7.03125vw;
     color: black;
     float: right; 
     margin-right: 5vw;
 `
 const StyledH12 = styled.h1`
     font-family: Impact_Label;
-    font-size: 90px;
+    font-size: 7.03125vw;
     color: black;
     margin-left: 5vw;
     
