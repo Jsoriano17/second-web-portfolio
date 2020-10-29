@@ -26,16 +26,16 @@ const Container = styled.div`
     position: relative;
     text-align: center;
     overflow: hidden;
-    height: 750px;
+    height: 109.01162790697674vh;
 `
 const StyledForm = styled.form`
     display: flex; 
     flex-direction: column;
 `
 const StyledNameInput = styled.input`
-    margin-top: 160px;
-    margin-left: 565px;
-    width: 400px;
+    margin-top: 23.837209302325583vh;
+    margin-left: 44.140625vw;
+    width: 31.25vw;
     background: transparent;
     border: none;
     z-index: 1; 
@@ -46,9 +46,9 @@ const StyledNameInput = styled.input`
     box-shadow: none;
 `
 const StyledEmailInput = styled.input`
-    margin-top: 55px;
-    margin-left: 535px;
-    width: 435px;
+    margin-top: 8.720930232558139vh;
+    margin-left: 41.796875vw;
+    width: 33.984375vw;
     background: transparent;
     border: none;
     z-index: 1;  
@@ -59,14 +59,14 @@ const StyledEmailInput = styled.input`
     box-shadow: none;
 `
 const StyledMessageInput = styled.textarea`
-    margin-top: 35px;
-    margin-left: 532px;
-    width: 440px;
-    height: 125px;
+    margin-top: 4.3604651162790695vh;
+    margin-left: 41.5625vw;
+    width: 34.375vw;
+    height: 17.877906976744185vh;
     background: transparent;
     border: none;
     resize: none;
-    padding: 5px;
+    padding:  0.7267441860465116vh 0.390625vw;
     z-index: 1;  
     outline: none;
 
@@ -76,32 +76,32 @@ const StyledMessageInput = styled.textarea`
 `
 const StyledSubmit = styled.input`
     z-index: 1;    
-    width: 100px; 
-    margin-top: 10px;
+    width: 7.8125vw; 
+    margin-top: 1.4534883720930232vh;
     border: 1px solid black;
     background: transparent;
-    margin-left: 872px;
+    margin-left: 68.125vw;
     cursor: pointer;
 `
 
 const Magazine = styled.img`
-    width: 1100px;
+    width: 85.9375vw;
     position: absolute;
-    top: 130px; 
-    left: 100px;
+    top: 18.8953488372093vh; 
+    left: 7.8125vw;
     z-index: 0;
 `
 const Envelope = styled.img`
-    width: 500px;
+    width: 39.0625vw;
     position: absolute;
-    top: 320px; 
-    left: -200px;
+    top: 46.51162790697674vh; 
+    left: -15.625vw;
     z-index: 0;
     transform: rotate(90deg);
 `
 
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 85px;
+    font-size: 6.640625vw;
     color: black;
 `
