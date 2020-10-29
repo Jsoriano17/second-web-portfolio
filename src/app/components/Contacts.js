@@ -9,10 +9,10 @@ export const Contacts = () => {
         <Container>
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                 <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
-                <StyledForm>
-                    <StyledNameInput required />
-                    <StyledEmailInput type="email" required />
-                    <StyledMessageInput required />
+                <StyledForm name="contact" method="POST" data-netlify="true">
+                    <StyledNameInput name="name" required />
+                    <StyledEmailInput type="email" type="email" required />
+                    <StyledMessageInput name="message" required />
                     <StyledSubmit type="submit" value="Submit" />
                 </StyledForm>
                 <Magazine src={ContactMag} />
