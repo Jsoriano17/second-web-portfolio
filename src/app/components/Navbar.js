@@ -91,10 +91,10 @@ const shake = keyframes`
 const Container = styled.div`
     position: absolute;
     top: 5.9vh; 
-    left: -0.6vw;
+    left: 2.6vw;
 `
 const StyledNav = styled.nav`
-   font-size: 19.5px;
+   font-size: 1.5234375vw;
 `
 const StyledUl = styled.ul`
     display: flex;
@@ -103,7 +103,7 @@ const StyledUl = styled.ul`
     text-align: center;
 `
 const StyledLi = styled.li`
-    margin: 0 5px;
+    margin: 0 0.390625vw;
     color: black;
     cursor: pointer;
     font-family: Impact_Label;
@@ -116,7 +116,7 @@ const StyledLi = styled.li`
 const ContainerRight = styled.div`
     position: absolute;
     top: 6.7vh; 
-    right: 58px;
+    right:  4.53125vw;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ const ContainerRight = styled.div`
     align-items: center;
 `
 const StyledAbout = styled.a`
-    font-size: 24px;
+    font-size: 1.875vw;
     color: black;
     cursor: pointer;
     font-family: Impact_Label;
