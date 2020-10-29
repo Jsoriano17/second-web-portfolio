@@ -17,13 +17,10 @@ const FrontEnd = () => {
 
     const changeGif = () => {
         if (fEG === frontEndStill) {
-            console.log('changed from still to rip down')
             setFEG(frontEnd)
         } else if (fEG === frontEnd) {
-            console.log('changed from rip down to reversed')
             setFEG(frontEndReversed)
         } else {
-            console.log('changed from reversed to rip down')
             setFEG(frontEnd)
         }
     }
