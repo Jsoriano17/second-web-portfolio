@@ -8,14 +8,14 @@ const HomeInventory = () => {
         <>
             <StyledP>
                 Home Inventory is an app <br />
-                created to keep track of all  <br /> 
+                created to keep track of all  <br />
                 your possessions. If you ever <br />
-                run into an accident, natural <br />  
-                disaster, or legal problem, <br />  
-                Home Inventory can help! Use <br />  
-                Home Inventory to keep track <br /> 
-                of household items, receipts, <br />  
-                and documents. Never worry <br />  
+                run into an accident, natural <br />
+                disaster, or legal problem, <br />
+                Home Inventory can help! Use <br />
+                Home Inventory to keep track <br />
+                of household items, receipts, <br />
+                and documents. Never worry <br />
                 again today! (desktop only)
             </StyledP>
             <StyledUl>
@@ -30,6 +30,10 @@ const HomeInventory = () => {
             </StyledUl>
             <StyledImg src={magazine} />
             <StyledGif src={homeInventoryGif} />
+            <a href="https://home-inventory-website.herokuapp.com/" target="_blank" style={{ color: 'black' }}>
+                <ClickBox />
+            </a>
+
         </>
     )
 }
@@ -51,6 +55,17 @@ const StyledGif = styled.img`
     right: 247px;
     z-index: 0;
     transform: rotate(-0.5deg);
+`
+const ClickBox = styled.div`
+    position: absolute;
+    width: 282px;
+    height: 158px;
+    top: 379px;
+    right: 247px;
+    z-index: 3;
+    opacity: 0;
+    transform: rotate(-0.5deg);
+
 `
 const StyledP = styled.p`
     font-size: 15px; 

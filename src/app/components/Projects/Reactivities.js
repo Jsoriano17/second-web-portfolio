@@ -36,6 +36,9 @@ const Reactivities = () => {
             </Container>
             <StyledImg src={magazine} />
             <StyledGif src={reactivitiesGif} />
+            <a href="https://github.com/Jsoriano17/Reactivities" target="_blank" style={{ color: 'black' }}>
+                <ClickBox />
+            </a>
         </>
     )
 }
@@ -56,6 +59,15 @@ const StyledGif = styled.img`
     top: 93px;
     left: 264px;
     z-index: 0;
+`
+const ClickBox = styled.div`
+    position: absolute;
+    width: 270px;
+    height: 169px;
+    top: 93px;
+    left: 264px;
+    opacity: 0;
+    z-index: 3;
 `
 const StyledP = styled.p`
     font-size: 15px; 

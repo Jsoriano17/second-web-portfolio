@@ -23,6 +23,9 @@ const FirstPortfolio = () => {
             </StyledUl>
             <StyledImg src={magazine} />
             <StyledGif src={firstPortfolioGif} />
+            <a href="https://soriadesign.com" target="_blank" style={{ color: 'black' }}>
+                <ClickBox />
+            </a>
         </>
     )
 }
@@ -43,6 +46,15 @@ const StyledGif = styled.img`
     top: 1670px;
     right: 312px;
     z-index: 0;
+`
+const ClickBox = styled.img`
+    position: absolute;
+    width: 235px;
+    height: 130px;
+    top: 1670px;
+    right: 312px;
+    opacity: 0;
+    z-index: 3;
 `
 const StyledP = styled.p`
     font-size: 15px; 

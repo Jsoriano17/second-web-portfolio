@@ -29,6 +29,9 @@ const AdventureLog = () => {
             </StyledUl>
             <StyledImg src={magazine} />
             <StyledGif src={adventureLogGif} />
+            <a href="https://github.com/Jsoriano17/AdventureLog" target="_blank" style={{ color: 'black' }}>
+                <ClickBox />
+            </a>
         </>
     )
 }
@@ -49,6 +52,15 @@ const StyledGif = styled.img`
     height: 400px;
     top: 1215px;
     z-index: 0;
+`
+const ClickBox = styled.div`
+    position: absolute;
+    width: 185px;
+    left: 175px;
+    height: 400px;
+    top: 1215px;
+    opacity: 0;
+    z-index: 3;
 `
 const StyledP = styled.p`
     font-size: 15px; 
