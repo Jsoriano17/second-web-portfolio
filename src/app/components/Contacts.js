@@ -31,6 +31,7 @@ const Container = styled.div`
 const StyledForm = styled.form`
     display: flex; 
     flex-direction: column;
+    font-size: 1.09375vw;
 `
 const StyledNameInput = styled.input`
     margin-top: 23.837209302325583vh;
