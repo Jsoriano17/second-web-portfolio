@@ -42,17 +42,17 @@ export default HomeInventory
 
 const StyledImg = styled.img`
     position: absolute;
-    width: 1100px;
-    top: 200px;
+    width: 85.9375vw;
+    top: 29.069767441860463vh;
     right: -36vw;
     z-index: 1;
 `
 const StyledGif = styled.img`
     position: absolute;
-    width: 282px;
-    height: 158px;
-    top: 379px;
-    right: 247px;
+    width: 22.03125vw;
+    height: 22.96511627906977vh;
+    top: 55.08720930232558vh;
+    right: 19.296875vw;
     z-index: 0;
     transform: rotate(-0.5deg);
 `
@@ -68,19 +68,19 @@ const ClickBox = styled.div`
 
 `
 const StyledP = styled.p`
-    font-size: 15px; 
-    margin-top: -70px;
-    margin-left: 945px;
+    font-size: 1.171875vw; 
+    margin-top: -10.174418604651162vh;
+    margin-left: 73.828125vw;
     color: #e3e3e3;
     position: relative;
-    text-indent: 20px;
+    text-indent: 1.5625vw;
     z-index: 3;
 `
 const StyledUl = styled.ul`
-    font-size: 17px; 
+    font-size: 1.328125vw; 
     font-weight: bold;
-    margin-top: -200px;
-    margin-right: 350px;
+    margin-top: -29.069767441860463vh;
+    margin-right: 31.25vw;
     position: relative;
     direction: rtl;
     z-index: 3; 
