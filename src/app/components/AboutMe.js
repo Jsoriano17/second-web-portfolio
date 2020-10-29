@@ -34,7 +34,7 @@ const Container = styled.div`
     display: flex; 
     flex-direction: row; 
     justify-content: space-around;
-    margin: 30px 50px;
+    margin: 4.3604651162790695vh 3.90625vw;
 `
 const ContainerCol = styled.div`
     display: flex; 
@@ -42,20 +42,20 @@ const ContainerCol = styled.div`
 `
 const StyledMag = styled.div`
     background: black;
-    width: 3500px; 
-    height: 600px;
-    margin-right: 100px;
+    width: 273.4375vw; 
+    height: 87.20930232558139vh;
+    margin-right: 7.8125vw;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 80px;
+    font-size: 6.25vw;
     color: black;
 `
 const StyledLink = styled.a`
     position: absolute;
-    font-size: 25px;
-    bottom: 50px; 
-    right: 50px;
+    font-size: 1.953125vw;
+    bottom: 7.267441860465116vh; 
+    right: 3.90625vw;
     color: black;
     font-family: Impact_Label;
     cursor: pointer; 
