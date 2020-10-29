@@ -13,7 +13,7 @@ const MagLetters = () => {
 export default MagLetters
 
 const StyledImg = styled.img`
-    width: 750px;
+    width: 58.59375vw;
     position: absolute;
     right: 2vw;
     top: 35vh;

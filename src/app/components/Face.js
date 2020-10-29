@@ -40,37 +40,6 @@ const StyledHead = styled.div`
     height: ${headHeight};
     z-index: 2;
 `
-
-/**************************
- keep just in case
- *************************/
-// const StyledHair = styled.div`
-//     position: absolute; 
-//     top:0;
-//     left:0;
-//     width: 100%;
-//     height: 100%;
-//     background: url(${MagHairBack}) fixed;
-//     background-position: 0% 8vh;
-//     background-size: contain;
-//     -webkit-mask: url(${MagHair});
-//     -webkit-mask-size: 100% 100%;
-//     -webkit-mask-repeat: no-repeat;
-// `
-// const StyledFace = styled.div`
-//     position: absolute; 
-//     top:0;
-//     left:0;
-//     width: 100%;
-//     height: 100%;
-//     background: url(${MagFaceBack}) fixed;
-//     background-position: -3% 8vh;
-//     background-size: contain;
-//     -webkit-mask: url(${MagFace});
-//     -webkit-mask-size: 100% 100%;
-//     -webkit-mask-repeat: no-repeat;
-// `
-/**************************/
 const StyledHair = styled.div`
     position: absolute; 
     top:0;

@@ -12,8 +12,8 @@ import { Link } from "react-scroll"
 const ContactIcons = () => {
     return (
         <Container>
-            <StyledAnchor href="https://www.linkedin.com/in/jeffrey-soriano/" target="_blank"><img src={linkedin} width="55px" alt="LinkedIn"/></StyledAnchor>
-            <StyledAnchor href="https://github.com/Jsoriano17" target="_blank"><img src={github} width="55px" alt="github" /></StyledAnchor>
+            <StyledAnchor href="https://www.linkedin.com/in/jeffrey-soriano/" target="_blank"><StyledIcon src={linkedin} alt="LinkedIn"/></StyledAnchor>
+            <StyledAnchor href="https://github.com/Jsoriano17" target="_blank"><StyledIcon src={github} alt="github" /></StyledAnchor>
             <GmailHover>
                 <Link
                     activeClass="active"
@@ -24,12 +24,12 @@ const ContactIcons = () => {
                     duration={500}
                     style={{ color: 'black' }}
                 >
-                    <img src={gmail} width="55px" alt="gmail" />
+                    <StyledIcon src={gmail} alt="gmail" />
                 </Link>
             </GmailHover>
-            <StyledAnchor href="https://www.facebook.com/SoriaDesigns/" target="_blank"><img src={facebook} width="55px" alt="facebook"/></StyledAnchor>
-            <StyledAnchor href="https://twitter.com/SoriaDesigns" target="_blank"><img src={twitter} width="55px" alt="twitter"/></StyledAnchor>
-            <StyledAnchor href="https://www.instagram.com/soriadesigns/" target="_blank"><img src={instagram} width="55px" alt="instagram" /></StyledAnchor>
+            <StyledAnchor href="https://www.facebook.com/SoriaDesigns/" target="_blank"><StyledIcon src={facebook} alt="facebook"/></StyledAnchor>
+            <StyledAnchor href="https://twitter.com/SoriaDesigns" target="_blank"><StyledIcon src={twitter} alt="twitter"/></StyledAnchor>
+            <StyledAnchor href="https://www.instagram.com/soriadesigns/" target="_blank"><StyledIcon src={instagram} alt="instagram" /></StyledAnchor>
         </Container>
     )
 }
@@ -60,16 +60,19 @@ const Container = styled.div`
 `
 const StyledAnchor = styled.a`
     cursor: pointer; 
-    margin: 0 5px;
+    margin: 0 0.390625vw;
 
     &:hover {
         animation: ${shake} 0.5s;
         animation-iteration-count: infinite;
     }
 `
+const StyledIcon = styled.img`
+    width: 4.296875vw;
+`
 const GmailHover = styled.a`
     cursor: pointer; 
-    margin: 0 5px;
+    margin: 0 0.390625vw;
 
     &:hover {
         animation: ${shake} 0.5s;
