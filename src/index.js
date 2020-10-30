@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app/App';
 import './index.css';
-import 'antd/dist/antd.css';
 import "animate.css/animate.min.css";
 import { BrowserRouter, } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';

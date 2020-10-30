@@ -58,7 +58,7 @@ const ClickBox = styled.img`
 `
 const StyledP = styled.p`
     font-size:  1.171875vw; 
-    margin-top: -7.994186046511628vh;
+    margin-top: 3.994186046511628vh;
     margin-left: 57.421875vw;
     color: black;
     position: relative;
@@ -67,7 +67,7 @@ const StyledP = styled.p`
 const StyledUl = styled.ul`
     font-size: 1.328125vw; 
     font-weight: bold;
-    margin-top: 3.052325581395349vh;
+    margin-top: 6.052325581395349vh;
     margin-left: 79.6875vw;
     position: relative;
     color: white;
@@ -76,5 +76,5 @@ const StyledUl = styled.ul`
 `
 
 const StyledLi = styled.li`
-    margin: 1.308139534883721vh 0;
+    margin: 2.1vh 0;
 `

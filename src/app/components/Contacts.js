@@ -34,7 +34,7 @@ const StyledForm = styled.form`
     font-size: 1.09375vw;
 `
 const StyledNameInput = styled.input`
-    margin-top: 23.837209302325583vh;
+    margin-top: 34.5vh;
     margin-left: 44.140625vw;
     width: 31.25vw;
     background: transparent;
@@ -47,7 +47,7 @@ const StyledNameInput = styled.input`
     box-shadow: none;
 `
 const StyledEmailInput = styled.input`
-    margin-top: 8.720930232558139vh;
+    margin-top: 9.720930232558139vh;
     margin-left: 41.796875vw;
     width: 33.984375vw;
     background: transparent;
@@ -60,10 +60,10 @@ const StyledEmailInput = styled.input`
     box-shadow: none;
 `
 const StyledMessageInput = styled.textarea`
-    margin-top: 4.3604651162790695vh;
+    margin-top: 5vh;
     margin-left: 41.5625vw;
-    width: 34.375vw;
-    height: 17.877906976744185vh;
+    width: 33.375vw;
+    height: 15.877906976744185vh;
     background: transparent;
     border: none;
     resize: none;
@@ -78,9 +78,10 @@ const StyledMessageInput = styled.textarea`
 const StyledSubmit = styled.input`
     z-index: 1;    
     width: 7.8125vw; 
-    margin-top: 1.4534883720930232vh;
+    margin-top: 0.5vh;
     border: 1px solid black;
     background: transparent;
+    padding: 3px 0 ;
     margin-left: 68.125vw;
     cursor: pointer;
 `
@@ -105,4 +106,5 @@ const StyledH1 = styled.h1`
     font-family: Impact_Label;
     font-size: 6.640625vw;
     color: black;
+    font-weight: 100;
 `

@@ -43,11 +43,12 @@ const StyledH1 = styled.h1`
     color: black;
     float: right; 
     margin-right: 5vw;
+    font-weight: 100;
 `
 const StyledH12 = styled.h1`
     font-family: Impact_Label;
     font-size: 7.03125vw;
     color: black;
     margin-left: 5vw;
-    
+    font-weight: 100;
 `

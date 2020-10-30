@@ -64,21 +64,21 @@ const ClickBox = styled.div`
 `
 const StyledP = styled.p`
     font-size: 1.171875vw; 
-    margin-top: 15.988372093023257vh;
+    margin-top: 21.988372093023257vh;
     margin-left: 16.40625vw;
     position: relative;
     z-index: 3;
 `
 const StyledP2 = styled.p`
     font-size: 1.171875vw; 
-    margin-top: 10.901162790697674vh;
+    margin-top: 13.901162790697674vh;
     margin-left: 32.421875vw;
     position: relative;
     z-index: 3; 
 `
 const StyledUl = styled.ul`
     font-size:  1.09375vw; 
-    margin-top: 0px;
+    margin-top: 2vh;
     margin-left: 34.375vw;
     position: relative;
     z-index: 3; 

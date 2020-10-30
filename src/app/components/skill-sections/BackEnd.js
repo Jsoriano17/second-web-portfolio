@@ -83,16 +83,17 @@ const StyledH1 = styled.h1`
     color: black;
     text-align: center;
     position: absolute; 
-    top: 17.441860465116278vh;
+    top: 19.441860465116278vh;
     left: 45.703125vw;
     z-index: 2;
+    font-weight: 100;
 `
 const StyledUl = styled.ul`
     font-size: 1.71875vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 25.436046511627907vh;
+    top: 27.436046511627907vh;
     left: 46.875vw;
     z-index: 2;
     font-family: 'Amatic SC', cursive;

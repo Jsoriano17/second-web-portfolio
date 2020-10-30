@@ -69,7 +69,7 @@ const ClickBox = styled.div`
 `
 const StyledP = styled.p`
     font-size: 1.171875vw; 
-    margin-top: -10.174418604651162vh;
+    margin-top: -5.174418604651162vh;
     margin-left: 73.828125vw;
     color: #e3e3e3;
     position: relative;
@@ -79,7 +79,7 @@ const StyledP = styled.p`
 const StyledUl = styled.ul`
     font-size: 1.328125vw; 
     font-weight: bold;
-    margin-top: -29.069767441860463vh;
+    margin-top: -18.069767441860463vh;
     margin-right: 31.25vw;
     position: relative;
     direction: rtl;

@@ -81,7 +81,7 @@ const StyledP = styled.p`
 const Container = styled.div`
     display: flex; 
     flex-direction: row;
-    margin-top: 19.33139534883721vh;
+    margin-top: 25.5vh;
     margin-left: 25vw;
     font-size: 0.9375vw; 
     font-weight: bold;

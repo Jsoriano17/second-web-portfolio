@@ -5,7 +5,7 @@ import { Skills } from './components/Skills'
 import { Contacts } from './components/Contacts'
 import styled from 'styled-components'
 import { Navbar } from './components/Navbar'
-import { BackTop } from 'antd'
+import ScrollToTop from "react-scroll-to-top";
 
 export const WebLayout = () => {
     return (
@@ -15,7 +15,7 @@ export const WebLayout = () => {
             <Projects />
             <Skills />
             <Contacts/>
-            <BackTop />
+            <ScrollToTop smooth={true} top={500} />
         </Container>
     )
 }
