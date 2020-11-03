@@ -4,30 +4,79 @@ import AdventureLog from './Projects/AdventureLog'
 import FirstPortfolio from './Projects/FirstPortfolio'
 import HomeInventory from './Projects/HomeInventory'
 import Reactivities from './Projects/Reactivities'
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll'
+import { useMediaQuery } from 'react-responsive'
+
 
 export const Projects = () => {
+    const Desktop = ({ children }) => {
+        const isDesktop = useMediaQuery({ minWidth: 992 })
+        return isDesktop ? children : null
+    }
+    const Laptop = ({ children }) => {
+        const isDesktop = useMediaQuery({ minWidth: 1280 })
+        return isDesktop ? children : null
+    }
+    const Tablet = ({ children }) => {
+        const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+        return isTablet ? children : null
+    }
+    const Mobile = ({ children }) => {
+        const isMobile = useMediaQuery({ maxWidth: 767 })
+        return isMobile ? children : null
+    }
+    const Default = ({ children }) => {
+        const isNotMobile = useMediaQuery({ minWidth: 768 })
+        return isNotMobile ? children : null
+    }
     return (
-        <Container>
-            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                <StyledH1 id="projects">Projects</StyledH1>
-            </ScrollAnimation>
-            <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true} >
-                    <Reactivities />
-            </ScrollAnimation>
-            <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
-                <HomeInventory />
-            </ScrollAnimation>
-            <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
-                    <AdventureLog />
-            </ScrollAnimation>
-            <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
-                    <FirstPortfolio />
-            </ScrollAnimation>
-            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                <StyledH12 id="skills">My_Skills</StyledH12>
-            </ScrollAnimation>
-        </Container>
+        <>
+            <Laptop>
+                <Container>
+                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                        <StyledH1 id="projects">Projects</StyledH1>
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true} >
+                        <Reactivities />
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
+                        <HomeInventory />
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
+                        <AdventureLog />
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
+                        <FirstPortfolio />
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                        <StyledH12 id="skills">My_Skills</StyledH12>
+                    </ScrollAnimation>
+                </Container>
+            </Laptop>
+            
+            <Tablet>
+                <Container>
+                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                        <StyledH1 id="projects">Projects</StyledH1>
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true} >
+                        <Reactivities />
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
+                        <HomeInventory />
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
+                        <AdventureLog />
+                    </ScrollAnimation>
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
+                        <FirstPortfolio />
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                        <StyledH12 id="skills">My_Skills</StyledH12>
+                    </ScrollAnimation>
+                </Container>
+            </Tablet>
+        </>
     )
 }
 
