@@ -53,7 +53,7 @@ export const Projects = () => {
                     </ScrollAnimation>
                 </Container>
             </Laptop>
-            
+
             <Tablet>
                 <Container>
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
