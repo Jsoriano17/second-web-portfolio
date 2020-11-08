@@ -70,7 +70,7 @@ const StyledAnchor = styled.a`
 const StyledIcon = styled.img`
     width: 4.296875vw;
 `
-const GmailHover = styled.a`
+const GmailHover = styled.div`
     cursor: pointer; 
     margin: 0 0.390625vw;
 
