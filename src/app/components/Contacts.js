@@ -11,7 +11,7 @@ export const Contacts = () => {
                 <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
                 <StyledForm name="contact" method="POST" data-netlify="true">
                     <StyledNameInput name="name" required />
-                    <StyledEmailInput type="email" type="email" required />
+                    <StyledEmailInput type="email" required />
                     <StyledMessageInput name="message" required />
                     <StyledSubmit type="submit" value="Submit" />
                 </StyledForm>

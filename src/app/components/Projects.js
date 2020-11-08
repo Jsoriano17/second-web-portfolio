@@ -9,10 +9,10 @@ import { useMediaQuery } from 'react-responsive'
 
 
 export const Projects = () => {
-    const Desktop = ({ children }) => {
-        const isDesktop = useMediaQuery({ minWidth: 992 })
-        return isDesktop ? children : null
-    }
+    // const Desktop = ({ children }) => {
+    //     const isDesktop = useMediaQuery({ minWidth: 992 })
+    //     return isDesktop ? children : null
+    // }
     const Laptop = ({ children }) => {
         const isDesktop = useMediaQuery({ minWidth: 1280 })
         return isDesktop ? children : null
@@ -21,14 +21,14 @@ export const Projects = () => {
         const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
         return isTablet ? children : null
     }
-    const Mobile = ({ children }) => {
-        const isMobile = useMediaQuery({ maxWidth: 767 })
-        return isMobile ? children : null
-    }
-    const Default = ({ children }) => {
-        const isNotMobile = useMediaQuery({ minWidth: 768 })
-        return isNotMobile ? children : null
-    }
+    // const Mobile = ({ children }) => {
+    //     const isMobile = useMediaQuery({ maxWidth: 767 })
+    //     return isMobile ? children : null
+    // }
+    // const Default = ({ children }) => {
+    //     const isNotMobile = useMediaQuery({ minWidth: 768 })
+    //     return isNotMobile ? children : null
+    // }
     return (
         <>
             <Laptop>
@@ -36,7 +36,7 @@ export const Projects = () => {
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                         <StyledH1 id="projects">Projects</StyledH1>
                     </ScrollAnimation>
-                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true} >
+                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                         <Reactivities />
                     </ScrollAnimation>
                     <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>

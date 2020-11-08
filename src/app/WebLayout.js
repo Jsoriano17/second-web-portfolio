@@ -21,5 +21,5 @@ export const WebLayout = () => {
 }
 
 const Container = styled.div`
-  background: white;
+  background: yellow;
 `

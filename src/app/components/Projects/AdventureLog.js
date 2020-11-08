@@ -5,37 +5,43 @@ import adventureLogGif from '../../assets/adventure-log-gif.gif';
 
 const AdventureLog = () => {
     return (
-        <>
+        <Container>
             <StyledImg src={magazine} />
             <StyledGif src={adventureLogGif} />
             <a href="https://github.com/Jsoriano17/AdventureLog" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                 <ClickBox />
             </a>
-        </>
+        </Container>
     )
 }
 
 export default AdventureLog
 
+const Container = styled.div`
+    position: relative; 
+    display: inline-block;
+    float: left;
+`
+
 const StyledImg = styled.img`
-    width: 50%;
-    float: left; 
+    width: 50vw;
+    position: relative;
     z-index: 1;
 `
 const StyledGif = styled.img`
     position: absolute;
-    width: 14.453125vw;
-    height: 58.13953488372093vh;
-    left: 14%;
-    top: 60%;
+    width: 28.3%;
+    height: 44%;
+    left: 28%;
+    top: 35.8%;
     z-index: 0;
 `
 const ClickBox = styled.div`
     position: absolute;
-    width: 14.453125vw;
-    height: 58.13953488372093vh;
-    left: 14%;
-    top: 60%;
+    width: 28.3%;
+    height: 44%;
+    left: 28%;
+    top: 35.8%;
     opacity: 0;
     z-index: 3;
 `
