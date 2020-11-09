@@ -23,21 +23,21 @@ export const Contacts = () => {
 }
 
 const Container = styled.div`
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    height: 109.01162790697674vh;
+    margin-top: 6%;
+    position: relative; 
+    width: 100%;
+    display: inline-block;
 `
 const StyledForm = styled.form`
-    display: flex; 
-    flex-direction: column;
     font-size: 1.09375vw;
 `
 const StyledNameInput = styled.input`
-    margin-top: 34.5vh;
-    margin-left: 44.140625vw;
-    width: 31.25vw;
+    position: absolute;
+    top: 73.8%;
+    left: 44%;
+    width: 31.25%;
     background: transparent;
+    font-size: 1vw;
     border: none;
     z-index: 1; 
     outline: none;
@@ -47,10 +47,12 @@ const StyledNameInput = styled.input`
     box-shadow: none;
 `
 const StyledEmailInput = styled.input`
-    margin-top: 9.720930232558139vh;
-    margin-left: 41.796875vw;
-    width: 33.984375vw;
+    top: 90.6%;
+    left: 41.5%;
+    position: absolute;
+    width: 33.984375%;
     background: transparent;
+    font-size: 1vw;
     border: none;
     z-index: 1;  
     outline: none;
@@ -60,14 +62,16 @@ const StyledEmailInput = styled.input`
     box-shadow: none;
 `
 const StyledMessageInput = styled.textarea`
-    margin-top: 5vh;
-    margin-left: 41.5625vw;
-    width: 33.375vw;
-    height: 15.877906976744185vh;
+    left: 42%;
+    top: 101.5%;
+    width: 32.7%;
+    height: 18%;
+    position: absolute;
     background: transparent;
+    font-size: 1vw;
     border: none;
     resize: none;
-    padding:  0.7267441860465116vh 0.390625vw;
+    padding:  0.7267441860465116% 0.390625%;
     z-index: 1;  
     outline: none;
 
@@ -76,28 +80,30 @@ const StyledMessageInput = styled.textarea`
     box-shadow: none;
 `
 const StyledSubmit = styled.input`
+    position: absolute;
     z-index: 1;    
-    width: 7.8125vw; 
-    margin-top: 0.5vh;
+    width: 7.8125%; 
     border: 1px solid black;
     background: transparent;
-    padding: 3px 0 ;
-    margin-left: 68.125vw;
+    padding: 0.5% 0 ;
+    top: 128%;
+    font-size: 1vw;
+    left: 68.125%;
     cursor: pointer;
 `
 
 const Magazine = styled.img`
-    width: 85.9375vw;
+    width: 86%;
     position: absolute;
-    top: 18.8953488372093vh; 
-    left: 7.8125vw;
+    top: 30%; 
+    left: 7.8%;
     z-index: 0;
 `
 const Envelope = styled.img`
-    width: 39.0625vw;
+    width: 39.0625%;
     position: absolute;
-    top: 46.51162790697674vh; 
-    left: -15.625vw;
+    top: 62%; 
+    left: -15.625%;
     z-index: 0;
     transform: rotate(90deg);
 `
@@ -105,6 +111,8 @@ const Envelope = styled.img`
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
     font-size: 6.640625vw;
+    margin-bottom: 30%;
     color: black;
     font-weight: 100;
+    text-align: center; 
 `
