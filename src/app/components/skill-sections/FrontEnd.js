@@ -62,20 +62,21 @@ const FrontEnd = () => {
 export default FrontEnd
 
 const FrontEndSec = styled.img`
-    height:  102.61627906976744vh;
-    width: 35.1171875vw;
+    height: 99.9%;
+    width: 35.2%;
     z-index: 3;
+    top: -0.2%;
     position: absolute;
 `
 const ClickBox = styled.div`
-    width: 15.625vw;
-    height: 72.67441860465117vh; 
+    width: 16%;
+    height: 72%; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 14.534883720930232vh;
-    left: 8.59375vw;
+    top: 14%;
+    left: 8.5%;
     opacity: 0;
 `
 const StyledH1 = styled.h1`
@@ -84,8 +85,8 @@ const StyledH1 = styled.h1`
     color: black;
     text-align: center;
     position: absolute; 
-    top: 18.441860465116278vh;
-    left: 10.15625vw;
+    top: 18.5%;
+    left: 10%;
     z-index: 2;
     font-weight: 100;
 `
@@ -94,8 +95,8 @@ const StyledUl = styled.ul`
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 27.436046511627907vh;
-    left: 11.71875vw;
+    top: 27%;
+    left: 11.5%;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;

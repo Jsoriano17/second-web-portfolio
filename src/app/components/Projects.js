@@ -82,7 +82,7 @@ export const Projects = () => {
 
 const Container = styled.div`
     width: 100%;
-    height: 292.1511627906977vh;
+    height: 200%;
     position: relative; 
     overflow: hidden;
 `

@@ -14,7 +14,7 @@ export const Skills = () => {
                 <FrontEnd /> 
                 <BackEnd />
                 <Design />
-                <StyledBackground src={background} width="100%" />
+                <StyledBackground src={background} />
                 <BackgroundShading src={shadow} width='100%' />
             </ScrollAnimation>
         </Container>
@@ -22,14 +22,13 @@ export const Skills = () => {
 }
 
 const Container = styled.div`
-    position: relative;
-    height: 109.01162790697674vh;
+    position: relative; 
+    display: inline-block;
 `
 
 const StyledBackground = styled.img`
-    position: absolute; 
-    top:  0.14534883720930233vh;
-    left: 0;
+    width: 100vw;
+    position: relative; 
     z-index: 1;
 `
 const BackgroundShading = styled.img`
@@ -38,6 +37,6 @@ const BackgroundShading = styled.img`
     left: 0; 
     z-index: 0; 
     width: 100%;
-    height: 110vh;
+    height: 107%;
     opacity: .5;
 `

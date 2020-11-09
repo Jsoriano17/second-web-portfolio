@@ -60,21 +60,22 @@ const BackEnd = () => {
 export default BackEnd
 
 const BackEndSec = styled.img`
-    height: 102.61627906976744vh;
-    width: 35.1171875vw;
+    height: 99.9%;
+    width: 35.2%;
     position: absolute;
-    left: 32.453125vw;
+    left: 32.4%;
+    top: -0.2%;
     z-index: 3;
 `
 const ClickBox = styled.div`
-    width: 15.625vw;
-    height: 72.67441860465117vh; 
+    width: 15.5%;
+    height: 72.5%; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 14.534883720930232vh;
-    left: 42.96875vw;
+    top: 14%;
+    left: 42%;
     opacity: 0;
 `
 const StyledH1 = styled.h1`
@@ -83,8 +84,8 @@ const StyledH1 = styled.h1`
     color: black;
     text-align: center;
     position: absolute; 
-    top: 19.441860465116278vh;
-    left: 45.703125vw;
+    top: 19%;
+    left: 45.5%;
     z-index: 2;
     font-weight: 100;
 `
@@ -93,8 +94,8 @@ const StyledUl = styled.ul`
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 27.436046511627907vh;
-    left: 46.875vw;
+    top: 27%;
+    left: 46.7%;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
