@@ -47,9 +47,9 @@ export const Projects = () => {
                 <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                     <FirstPortfolio />
                 </ScrollAnimation>
-                {/* <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                     <StyledH12 id="skills">My_Skills</StyledH12>
-                </ScrollAnimation> */}
+                </ScrollAnimation>
             </Container>
         </>
     )
@@ -69,10 +69,10 @@ const StyledH1 = styled.h1`
     margin-right: 5vw;
     font-weight: 100;
 `
-// const StyledH12 = styled.h1`
-//     font-family: Impact_Label;
-//     font-size: 7.03125vw;
-//     color: black;
-//     margin-left: 5vw;
-//     font-weight: 100;
-// `
+const StyledH12 = styled.h1`
+    font-family: Impact_Label;
+    font-size: 7.03125vw;
+    color: black;
+    margin-left: 5vw;
+    font-weight: 100;
+`
