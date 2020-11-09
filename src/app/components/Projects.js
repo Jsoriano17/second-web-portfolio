@@ -47,9 +47,9 @@ export const Projects = () => {
                 <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                     <FirstPortfolio />
                 </ScrollAnimation>
-                <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                {/* <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                     <StyledH12 id="skills">My_Skills</StyledH12>
-                </ScrollAnimation>
+                </ScrollAnimation> */}
             </Container>
         </>
     )
