@@ -121,4 +121,3 @@ const StyledEarrings = styled.div`
     -webkit-mask-repeat: no-repeat;
 `
 
-

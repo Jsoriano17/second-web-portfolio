@@ -97,4 +97,3 @@ const FaceBack = styled.img`
     height: 80.5vh;
     z-index: 1;
 `
-
