@@ -18,10 +18,10 @@ export const Projects = () => {
     })
     const isBigScreen = useMediaQuery({ query: '(min-device-width: 1280px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    const isTabletOrMobileDevice = useMediaQuery({
-        query: '(max-device-width: 1224px)'
-    })
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+    // const isTabletOrMobileDevice = useMediaQuery({
+    //     query: '(max-device-width: 1224px)'
+    // })
+    // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
     return (
         <>
             {isDesktopOrLaptop && <>
@@ -69,6 +69,7 @@ export const Projects = () => {
                     </ScrollAnimation>
                 </Container>
             </>}
+            {isBigScreen  && <> </>}
         </>
     )
 }
