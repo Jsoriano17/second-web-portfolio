@@ -89,7 +89,7 @@ const StyledH1 = styled.h1`
 `
 const StyledH1Mobile = styled.h1`
     font-family: Impact_Label;
-    font-size: 12vw;
+    font-size: 17vw;
     margin-bottom: 10%;
     color: black;
     text-align: center;
@@ -104,7 +104,7 @@ const StyledH12 = styled.h1`
 `
 const StyledH12Mobile = styled.h1`
     font-family: Impact_Label;
-    font-size: 12vw;
+    font-size: 17vw;
     margin-bottom: 10%;
     color: black;
     text-align: center;
