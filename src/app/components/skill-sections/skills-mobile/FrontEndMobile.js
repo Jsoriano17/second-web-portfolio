@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import frontEnd from '../../assets/front-end-gif.gif';
-import frontEndReversed from '../../assets/front-end-gif-reversed.gif'
-import frontEndStill from '../../assets/front-end-still.png'
+import frontEnd from '../../../assets/front-end-gif.gif';
+import frontEndReversed from '../../../assets/front-end-gif-reversed.gif'
+import frontEndStill from '../../../assets/front-end-still.png'
 import styled from 'styled-components';
 
-const FrontEnd = () => {
+const FrontEndMobile = () => {
 
     const [fEG, setFEG] = useState(frontEndStill);
     const [gifDisplay, setGifDisplay] = useState('block')
@@ -59,44 +59,45 @@ const FrontEnd = () => {
     )
 }
 
-export default FrontEnd
+export default FrontEndMobile
 
 const FrontEndSec = styled.img`
-    height: 84.4%;
-    width: 30.6%;
-    top: 9.2%;
+    height: 28.6%;
+    width: 100%;
+    overflow: hidden;
     z-index: 3;
+    top: 3.3%;
     position: absolute;
 `
 const ClickBox = styled.div`
-    width: 16%;
-    height: 72%; 
+    width: 40%;
+    height: 25%; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 14%;
-    left: 8.5%;
+    top: 5%;
+    left: 33%;
     opacity: 0;
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 2.734375vw;
+    font-size: 9.5vw;
     color: black;
     text-align: center;
     position: absolute; 
-    top: 18.5%;
-    left: 10%;
+    top: 6.3%;
+    left: 32%;
     z-index: 2;
     font-weight: 100;
 `
 const StyledUl = styled.ul`
-    font-size: 1.71875vw;
+    font-size: 6.5vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 27%;
-    left: 11.5%;
+    top: 9%;
+    left: 35%;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;

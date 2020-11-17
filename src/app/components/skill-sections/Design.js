@@ -53,11 +53,11 @@ const Design = () => {
 export default Design
 
 const DesignSec = styled.img`
-    height: 99.9%;
-    width: 35.2%;
+    height: 83.7%;
+    width: 30.6%;
+    top: 10.9%;
     position: absolute;
     right: 0;
-    top: -0.2%;
     z-index: 3;
 `
 const ClickBox = styled.div`

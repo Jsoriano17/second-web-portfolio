@@ -14,14 +14,12 @@ import FirstPortfolioMobile from './Projects/MobileOrTablet/FirstPortfolioMobile
 
 export const Projects = () => {
     const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-device-width: 1224px)'
+        query: '(min-device-width: 1280px)'
     })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 1280px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    // const isTabletOrMobileDevice = useMediaQuery({
-    //     query: '(max-device-width: 1224px)'
-    // })
-    // const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+    const isBigScreen = useMediaQuery({ query: '(min-device-width: 2000px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1280px)' })
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+    
     return (
         <>
             {isDesktopOrLaptop && <>
@@ -47,7 +45,7 @@ export const Projects = () => {
                 </Container>
             </>}
 
-            {isTabletOrMobile && <>
+            {isTabletOrMobile && isPortrait && <>
                 <Container>
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                         <StyledH1Mobile id="projects">Projects</StyledH1Mobile>
@@ -69,6 +67,7 @@ export const Projects = () => {
                     </ScrollAnimation>
                 </Container>
             </>}
+
             {isBigScreen  && <> </>}
         </>
     )
