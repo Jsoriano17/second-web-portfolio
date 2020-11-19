@@ -19,27 +19,17 @@ export const Projects = () => {
     const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1280px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-    
+
     return (
         <>
             {isDesktopOrLaptop && <>
                 <Container>
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                         <StyledH1 id="projects">Projects</StyledH1>
-                    </ScrollAnimation>
-                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                         <Reactivities />
-                    </ScrollAnimation>
-                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                         <HomeInventory />
-                    </ScrollAnimation>
-                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                         <AdventureLog />
-                    </ScrollAnimation>
-                    <ScrollAnimation offset={3000} animateIn='animate__fadeIn' animateOnce={true}>
                         <FirstPortfolio />
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                         <StyledH12 id="skills">My_Skills</StyledH12>
                     </ScrollAnimation>
                 </Container>
@@ -68,7 +58,7 @@ export const Projects = () => {
                 </Container>
             </>}
 
-            {isBigScreen  && <> </>}
+            {isBigScreen && <> </>}
         </>
     )
 }

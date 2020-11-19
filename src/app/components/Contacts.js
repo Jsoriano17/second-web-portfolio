@@ -6,8 +6,8 @@ import EnvelopePic from '../assets/envelope.png';
 
 export const Contacts = () => {
     return (
-        <Container>
-            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+        <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+            <Container>
                 <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
                 <StyledForm name="contact" method="POST" data-netlify="true">
                     <StyledNameInput name="name" required />
@@ -17,8 +17,9 @@ export const Contacts = () => {
                 </StyledForm>
                 <Magazine src={ContactMag} />
                 <Envelope src={EnvelopePic} />
-            </ScrollAnimation>
-        </Container>
+            </Container>
+        </ScrollAnimation>
+
     )
 }
 
