@@ -23,10 +23,11 @@ const Container = styled.div`
     display: inline-block;
     float: right;
     margin-top: 6%;
+    width: 50%;
 `
 
 const StyledImg = styled.img`
-    width: 50vw;
+    width: 100%;
     position: relative; 
     z-index: 1;
 `

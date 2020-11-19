@@ -14,10 +14,10 @@ import FirstPortfolioMobile from './Projects/MobileOrTablet/FirstPortfolioMobile
 
 export const Projects = () => {
     const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-device-width: 1280px)'
+        query: '(min-device-width: 1224px)'
     })
     const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1280px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
     return (

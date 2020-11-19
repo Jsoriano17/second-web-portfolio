@@ -20,10 +20,11 @@ const Container = styled.div`
     position: relative; 
     display: inline-block;
     float: right;
+    width: 50%;
 `
 
 const StyledImg = styled.img`
-    width: 50vw;
+    width: 100%;
     position: relative;
     z-index: 1;
 `
