@@ -20,7 +20,9 @@ export const Home = () => {
         query: '(min-device-width: 1280px)'
     })
     const isBigScreen = useMediaQuery({ query: '(min-device-width: 2000px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1280px)' })
+    const isTablet = useMediaQuery({ query: '(min-device-width: 446px)' })
+    const isTabletMax = useMediaQuery({ query: '(max-width: 1280px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 445px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
     return (
@@ -39,19 +41,31 @@ export const Home = () => {
                     </StyledAnimation>
                 </Container>
             </>}
-            {isTabletOrMobile && isPortrait && <>
+            {isTablet && isPortrait && isTabletMax && <>
+                <ContainerTablet>
+                    <StyledBackgroundMobile src={paperMobile} />
+                    <StyledBackgroundShadow src={paperShadow} />
+                    <FaceContainer>
+                        <EyesGifTablet src={eyes} />
+                        <FaceTablet src={mobileFace} />
+                    </FaceContainer>
+                    <StyledAnimation>
+                        <TabletLetters src={Letters} />
+                    </StyledAnimation>
+                </ContainerTablet>
+            </>}
+            {isMobile && isPortrait && <>
                 <ContainerMobile>
                     <StyledBackgroundMobile src={paperMobile} />
                     <StyledBackgroundShadow src={paperShadow} />
                     <FaceContainer>
-                        <EyesGif src={eyes} />
+                        <EyesGifMobile src={eyes} />
                         <FaceMobile src={mobileFace} />
                     </FaceContainer>
                     <StyledAnimation>
                         <MobileLetters src={LettersMobile} />
                     </StyledAnimation>
                 </ContainerMobile>
-
             </>}
             {isBigScreen && <> </>}
         </>
@@ -77,7 +91,15 @@ const Container = styled.div`
     background: white;
     margin-bottom: 20vh;
 `
-
+const ContainerTablet = styled.div`
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 20vh;
+`
 const ContainerMobile = styled.div`
     width:100%;
     height: 100vh;
@@ -151,6 +173,14 @@ const StyledImg = styled.img`
     right: 2vw;
     top: 35vh;
 `
+const TabletLetters = styled.img`
+    margin-top: 5%;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+`
 const MobileLetters = styled.img`
     margin-top: 5%;
     width: 90%;
@@ -162,6 +192,14 @@ const MobileLetters = styled.img`
 const FaceContainer = styled.div`
     position: relative;
 `
+const FaceTablet = styled.img`
+    width: 80%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2; 
+`
 const FaceMobile = styled.img`
     width: 100%;
     display: block;
@@ -170,8 +208,15 @@ const FaceMobile = styled.img`
     margin-right: auto;
     z-index: 2; 
 `
-
-const EyesGif = styled.img`
+const EyesGifTablet = styled.img`
+    position: absolute;
+    width: 59.9%;
+    right: 8.6%;
+    overflow: hidden;
+    top: 0.4%;
+    z-index: 3;
+`
+const EyesGifMobile = styled.img`
     position: absolute;
     width: 71%;
     right: 0.3%;
