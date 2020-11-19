@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link } from "react-scroll";
-import ResumePDF from '../assets/Resume.pdf'
+import ResumePDF from '../assets/Resume.pdf';
+import { useMediaQuery } from 'react-responsive';
+
 
 
 
@@ -10,66 +12,72 @@ export const Navbar = () => {
     const [index, setIndex] = useState(1);
 
     setTimeout(function () { setIndex(2) }, 3400)
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 1280px)'
+    })
     return (
         <>
-            <Container style={{ zIndex: index }}>
-                <StyledNav>
-                    <StyledUl>
-                        <StyledLi style={{ color: 'black' }}>
-                            <Link
-                                activeClass="active"
-                                to="projects"
-                                spy={true}
-                                smooth={true}
-                                offset={-40}
-                                duration={500}
-                                style={{ color: 'black' }}
-                            >
-                                Projects
+            { isDesktopOrLaptop && <>
+                <Container style={{ zIndex: index }}>
+                    <StyledNav>
+                        <StyledUl>
+                            <StyledLi style={{ color: 'black' }}>
+                                <Link
+                                    activeClass="active"
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-40}
+                                    duration={500}
+                                    style={{ color: 'black' }}
+                                >
+                                    Projects
                             </Link>
-                        </StyledLi>
-                        <StyledLi>
-                            <Link
-                                activeClass="active"
-                                to="skills"
-                                spy={true}
-                                smooth={true}
-                                offset={-40}
-                                duration={500}
-                                style={{ color: 'black' }}
-                            >
-                                Skills
+                            </StyledLi>
+                            <StyledLi>
+                                <Link
+                                    activeClass="active"
+                                    to="skills"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-40}
+                                    duration={500}
+                                    style={{ color: 'black' }}
+                                >
+                                    Skills
                             </Link>
-                        </StyledLi>
-                        <StyledLi>
-                            <Link
-                                activeClass="active"
-                                to="contacts"
-                                spy={true}
-                                smooth={true}
-                                offset={-40}
-                                duration={500}
-                                style={{ color: 'black' }}
-                            >
-                                Contacts
+                            </StyledLi>
+                            <StyledLi>
+                                <Link
+                                    activeClass="active"
+                                    to="contacts"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-40}
+                                    duration={500}
+                                    style={{ color: 'black' }}
+                                >
+                                    Contacts
                             </Link>
-                        </StyledLi>
-                        <StyledLi>
-                            <a
-                                style={{ color: 'black' }}
-                                href={ResumePDF}
-                                target='_blank'
-                                rel="noopener noreferrer"
-                            >
-                                Resume
+                            </StyledLi>
+                            <StyledLi>
+                                <a
+                                    style={{ color: 'black' }}
+                                    href={ResumePDF}
+                                    target='_blank'
+                                    rel="noopener noreferrer"
+                                >
+                                    Resume
                                 </a>
-                        </StyledLi>
-                    </StyledUl>
-                </StyledNav>
-            </Container>
-            <ContainerRight style={{ zIndex: index }}>
-                <StyledAbout as={RouterLink} to='/about'>About-{">"}</StyledAbout>
-            </ContainerRight>
+                            </StyledLi>
+                        </StyledUl>
+                    </StyledNav>
+                </Container>
+                <ContainerRight style={{ zIndex: index }}>
+                    <StyledAbout as={RouterLink} to='/about'>About-{">"}</StyledAbout>
+                </ContainerRight>
+            </>}
         </>
     )
 }
