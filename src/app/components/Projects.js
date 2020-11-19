@@ -16,7 +16,7 @@ export const Projects = () => {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-device-width: 1280px)'
     })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 2000px)' })
+    const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1280px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
     
