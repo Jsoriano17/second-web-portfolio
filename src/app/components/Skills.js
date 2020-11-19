@@ -61,7 +61,7 @@ const Container = styled.div`
 `
 
 const StyledBackground = styled.img`
-    width: 100vw;
+    width: 100%;
     position: relative; 
     z-index: 1;
 `

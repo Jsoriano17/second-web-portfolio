@@ -15,7 +15,7 @@ export const WebLayout = () => {
             <Projects />
             <Skills />
             <Contacts/>
-            <ScrollToTop smooth={true} top={500} style={{zIndex: 5}} />
+            <ScrollToTop color="white" viewBox="-70 -10 400 300" smooth={true} top={500} style={{zIndex: 5, background: 'black'}}/>
         </Container>
     )
 }
