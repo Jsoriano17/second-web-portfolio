@@ -30,7 +30,7 @@ export const Projects = () => {
                         <HomeInventory />
                         <AdventureLog />
                         <FirstPortfolio />
-                        <StyledH12 id="skills">My_Skills</StyledH12>
+                        <StyledH12>My_Skills</StyledH12>
                     </ScrollAnimation>
                 </Container>
             </>}
@@ -53,7 +53,7 @@ export const Projects = () => {
                         <FirstPortfolioMobile />
                     </ScrollAnimation>
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                        <StyledH12Mobile id="skills">My_Skills</StyledH12Mobile>
+                        <StyledH12Mobile>My_Skills</StyledH12Mobile>
                     </ScrollAnimation>
                 </Container>
             </>}

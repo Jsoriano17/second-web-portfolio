@@ -17,16 +17,16 @@ import DesignMobile from './skill-sections/skills-mobile/DesignMobile';
 
 export const Skills = () => {
     const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-device-width: 1280px)'
+        query: '(min-device-width: 1224px)'
     })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 2000px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1280px)' })
+    const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
     return (
         <>
             { isDesktopOrLaptop && <>
-                <Container>
+                <Container id="skills">
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                         <FrontEnd />
                         <BackEnd />
@@ -38,14 +38,14 @@ export const Skills = () => {
             </>}
 
             {isTabletOrMobile && isPortrait && <>
-                <Container>
+                <Container id="skills">
                     <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                         <FrontEndMobile />
                         <BackEndMobile />
                         <DesignMobile />
-                        <StyledFrontEndBack src={FrontEndBackground}/>
+                        <StyledFrontEndBack src={FrontEndBackground} />
                         <StyledBackEndBack src={BackEndBackground} />
-                        <StyledDesignBack src={DesignBackground}/>
+                        <StyledDesignBack src={DesignBackground} />
                     </ScrollAnimation>
                 </Container>
             </>}
