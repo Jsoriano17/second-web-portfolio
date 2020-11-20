@@ -83,7 +83,7 @@ export const Navbar = () => {
                 <button style={{ position: 'absolute', top: 0, left: 0, zIndex: 3 }} onClick={() => setActive("moveDown 0.9s ease forwards")}>click me</button>
                 <div style={{
                     width: "100%",
-                    height: "60%",
+                    height: "60vh",
                     top: "-80%",
                     overflow: "hidden",
                     position: "absolute",
