@@ -39,20 +39,23 @@ const BackEndMobile = () => {
                 style={{ display: gifDisplay }}
             />
             <BackEndSec src={bEG} />
-            <StyledH1>Back_End</StyledH1>
             <StyledUl>
                 <li>C#</li>
                 <li>ASP.NET Core</li>
                 <li>ASP.NET Identity</li>
                 <li>ASP.NET MVC</li>
                 <li>EF Core</li>
+            </StyledUl>
+            <StyledUlTwo>
                 <li>Ruby</li>
                 <li>Ruby On Rails</li>
                 <li>Devise</li>
                 <li>SQL</li>
                 <li>Postgres</li>
+            </StyledUlTwo>
+            <StyledUlThree>
                 <li>MySQL</li>
-            </StyledUl>
+            </StyledUlThree>
         </>
     )
 }
@@ -60,42 +63,57 @@ const BackEndMobile = () => {
 export default BackEndMobile
 
 const BackEndSec = styled.img`
-    height: 27.4%;
-    width: 100%;
+    height: 44%;
+    width: 62%;
     overflow: hidden;
-    position: absolute;
-    top: 37.2%;
     z-index: 3;
+    transform: rotate(90deg);
+    top: 27.8%;
+    left: 13%;
+    position: absolute;
 `
 const ClickBox = styled.div`
-    width: 40%;
-    height: 25%;  
+    width: 80%;
+    height: 10%; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 38%;
-    left: 30%;
+    top: 45%;
+    left: 10%;
     opacity: 0;
 `
-const StyledH1 = styled.h1`
-    font-family: Impact_Label;
-    font-size: 9.5vw;
-    color: black;
-    text-align: center;
-    position: absolute; 
-    top: 40%;
-    left: 34%;
-    z-index: 2;
-    font-weight: 100;
-`
 const StyledUl = styled.ul`
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 42.6%;
-    left: 37%;
+    top: 44%;
+    left: 17%;
+    z-index: 2;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    opacity: 0.7; 
+`
+const StyledUlTwo = styled.ul`
+    font-size: 4.5vw;
+    list-style-type: none;
+    text-align: center;
+    position: absolute; 
+    top: 44%;
+    left: 40%;
+    z-index: 2;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    opacity: 0.7; 
+`
+const StyledUlThree = styled.ul`
+    font-size: 4.5vw;
+    list-style-type: none;
+    text-align: center;
+    position: absolute; 
+    top: 44%;
+    left: 62%;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;

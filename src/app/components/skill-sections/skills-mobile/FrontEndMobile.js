@@ -41,20 +41,23 @@ const FrontEndMobile = () => {
                 style={{ display: gifDisplay }}
             />
             <FrontEndSec src={fEG} />
-            <StyledH1>Front_End</StyledH1>
             <StyledUl>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript ES6</li>
                 <li>React.JS</li>
                 <li>TypeScript</li>
+            </StyledUl>
+            <StyledUlTwo>
                 <li>MobX</li>
                 <li>Axios</li>
                 <li>React Router Dom</li>
                 <li>Ant.Design</li>
                 <li>BootStrap</li>
-                <li>Semantic UI React</li>
-            </StyledUl>
+            </StyledUlTwo>
+            <StyledUlThree>
+                <li>Semantic UI</li>
+            </StyledUlThree>
         </>
     )
 }
@@ -62,42 +65,57 @@ const FrontEndMobile = () => {
 export default FrontEndMobile
 
 const FrontEndSec = styled.img`
-    height: 28.6%;
-    width: 100%;
+    height: 44%;
+    width: 60.4%;
     overflow: hidden;
     z-index: 3;
-    top: 3.3%;
+    transform: rotate(90deg);
+    top: -5.8%;
+    left: 15%;
     position: absolute;
 `
 const ClickBox = styled.div`
-    width: 40%;
-    height: 25%; 
+    width: 80%;
+    height: 10%; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 5%;
-    left: 33%;
+    top: 12%;
+    left: 10%;
     opacity: 0;
 `
-const StyledH1 = styled.h1`
-    font-family: Impact_Label;
-    font-size: 9.5vw;
-    color: black;
-    text-align: center;
-    position: absolute; 
-    top: 6.3%;
-    left: 32%;
-    z-index: 2;
-    font-weight: 100;
-`
 const StyledUl = styled.ul`
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 9%;
-    left: 35%;
+    top: 10%;
+    left: 17%;
+    z-index: 2;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    opacity: 0.7; 
+`
+const StyledUlTwo = styled.ul`
+    font-size: 4.5vw;
+    list-style-type: none;
+    text-align: center;
+    position: absolute; 
+    top: 10%;
+    left: 38%;
+    z-index: 2;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    opacity: 0.7; 
+`
+const StyledUlThree = styled.ul`
+    font-size: 4.5vw;
+    list-style-type: none;
+    text-align: center;
+    position: absolute; 
+    top: 10%;
+    left: 60%;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;

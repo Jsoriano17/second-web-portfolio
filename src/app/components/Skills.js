@@ -5,9 +5,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import FrontEnd from './skill-sections/FrontEnd';
 import BackEnd from './skill-sections/BackEnd';
 import Design from './skill-sections/Design';
-import FrontEndBackground from '../assets/front-end-background.jpg'
-import BackEndBackground from '../assets/back-end-background.jpg'
-import DesignBackground from '../assets/design-background.jpg'
+import FrontEndBackground from '../assets/front-end-background.png'
+import BackEndBackground from '../assets/back-end-background.png'
+import DesignBackground from '../assets/design-background.png'
 import shadow from '../assets/paper-background-shading.png';
 import { useMediaQuery } from 'react-responsive';
 import FrontEndMobile from './skill-sections/skills-mobile/FrontEndMobile';

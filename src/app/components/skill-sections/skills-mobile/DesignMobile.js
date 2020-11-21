@@ -38,7 +38,6 @@ const DesignMobile = () => {
                 style={{ display: gifDisplay }}
             />
             <DesignSec src={dEG} />
-            <StyledH1>Design</StyledH1>
             <StyledUl>
                 <li>Adobe PhotoShop</li>
                 <li>Adobe Illustrator</li>
@@ -53,43 +52,33 @@ const DesignMobile = () => {
 export default DesignMobile
 
 const DesignSec = styled.img`
-    height: 28.33%;
-    width: 100%;
+    height: 44%;
+    width: 62%;
     overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 70%;
     z-index: 3;
+    transform: rotate(90deg);
+    top: 61%;
+    left: 13%;
+    position: absolute;
 `
 const ClickBox = styled.div`
-    width: 40%;
-    height: 25%; 
+    width: 80%;
+    height: 10%; 
     background: black;
     cursor: pointer; 
     position: absolute; 
     z-index: 5;
-    top: 71%;
-    left: 27%;
+    top: 77%;
+    left: 10%;
     opacity: 0;
 `
-const StyledH1 = styled.h1`
-    font-family: Impact_Label;
-    font-size: 10.5vw;
-    color: black;
-    text-align: center;
-    position: absolute; 
-    top: 73%;
-    left: 25%;
-    z-index: 2;
-    font-weight: 100;
-`
 const StyledUl = styled.ul`
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     list-style-type: none;
     text-align: center;
     position: absolute; 
-    top: 76%;
-    left: 28%;
+    top: 75.5%;
+    left: 17%;
     z-index: 2;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
