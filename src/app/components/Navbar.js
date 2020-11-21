@@ -6,10 +6,20 @@ import ResumePDF from '../assets/Resume.pdf';
 import { useMediaQuery } from 'react-responsive';
 import paperNav from '../assets/hand-with-paper.png';
 import ContactIconsMobile from './ContactIconsMobile';
+import HamburgerMenu from 'react-hamburger-menu';
 
 export const Navbar = () => {
     const [index, setIndex] = useState(1);
-    const [active, setActive] = useState("none");
+    const [active, setActive] = useState(false);
+    const [navAnimation, setNavAnimation] = useState("none");
+
+    const changeAnimation = (navAnimation) => {
+        if (navAnimation === 'none' || navAnimation === "moveUp 0.9s ease forwards") {
+            setNavAnimation("moveDown 0.9s ease forwards");
+        } else {
+            setNavAnimation("moveUp 0.9s ease forwards")
+        }
+    }
     setTimeout(function () { setIndex(2) }, 3400)
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-device-width: 1224px)'
@@ -80,7 +90,20 @@ export const Navbar = () => {
                 </ContainerRight>
             </>}
             { isTabletOrMobile && isPortrait && <>
-                <button style={{ position: 'absolute', top: 0, left: 0, zIndex: 3 }} onClick={() => setActive("moveDown 0.9s ease forwards")}>click me</button>
+                <div
+                    style={{ position: 'absolute', top: '3%', left: '5%', zIndex: 6 }}
+                    onClick={() => changeAnimation(navAnimation)}
+                >
+                    <HamburgerMenu
+                        isOpen={active}
+                        menuClicked={() => setActive(!active)}
+                        width={40}
+                        height={24}
+                        strokeWidth={3}
+                        color='#e8edec'
+                        animationDuration={0.5}
+                    />
+                </div>
                 <div style={{
                     width: "100%",
                     height: "60vh",
@@ -88,7 +111,7 @@ export const Navbar = () => {
                     overflow: "hidden",
                     position: "absolute",
                     zIndex: "5",
-                    animation: active
+                    animation: navAnimation
                 }}>
                     <StyledUlMobile>
                         <StyledLiMobile><Link
@@ -134,7 +157,6 @@ export const Navbar = () => {
                                 </a></StyledLiMobile>
                     </StyledUlMobile>
                     <ContactIconsMobile />
-                    <button style={{ position: 'absolute', top: 0, left: 0, zIndex: 6 }} onClick={() => setActive("moveUp 0.5s ease forwards")}>click me</button>
                     <BackgroundImg src={paperNav} />
                 </div>
             </>}
