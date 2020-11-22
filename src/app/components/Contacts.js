@@ -3,23 +3,41 @@ import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ContactMag from '../assets/magazines/contact-mag.png';
 import EnvelopePic from '../assets/envelope.png';
+import { useMediaQuery } from 'react-responsive';
+import { ContactsMobile } from './ContactsMobile';
 
 export const Contacts = () => {
-    return (
-        <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-            <Container>
-                <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
-                <StyledForm name="contact" method="POST" data-netlify="true">
-                    <StyledNameInput name="name" required />
-                    <StyledEmailInput type="email" required />
-                    <StyledMessageInput name="message" required />
-                    <StyledSubmit type="submit" value="Submit" />
-                </StyledForm>
-                <Magazine src={ContactMag} />
-                <Envelope src={EnvelopePic} />
-            </Container>
-        </ScrollAnimation>
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 1224px)'
+    })
+    const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
+    return (
+        <>
+            {isDesktopOrLaptop && <>
+                <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                    <Container>
+                        <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
+                        <StyledForm name="contact" method="POST" data-netlify="true">
+                            <StyledNameInput name="name" required />
+                            <StyledEmailInput type="email" required />
+                            <StyledMessageInput name="message" required />
+                            <StyledSubmit type="submit" value="Submit" />
+                        </StyledForm>
+                        <Magazine src={ContactMag} />
+                        <Envelope src={EnvelopePic} />
+                    </Container>
+                </ScrollAnimation>
+            </>}
+            
+            {isTabletOrMobile && isPortrait && <>
+                <ContactsMobile />
+            </>}
+
+            {isBigScreen && <> </>}
+        </>
     )
 }
 
