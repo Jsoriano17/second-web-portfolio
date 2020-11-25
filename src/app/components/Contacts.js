@@ -3,97 +3,56 @@ import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ContactMag from '../assets/magazines/contact-mag.png';
 import EnvelopePic from '../assets/envelope.png';
-import { useMediaQuery } from 'react-responsive';
-import { ContactsMobile } from './ContactsMobile';
-import {
-    useNetlifyForm,
-    NetlifyFormProvider,
-    NetlifyFormComponent,
-    Honeypot
-} from 'react-netlify-forms'
-import { useForm } from 'react-hook-form'
 
-export const Contacts = () => {
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-device-width: 1224px)'
-    })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
-    const { register, handleSubmit } = useForm({ mode: 'onBlur' })
-    const netlify = useNetlifyForm({
-        name: 'react-hook-form',
-        action: '/thanks',
-        honeypotName: 'bot-field',
-        onSuccess: (response, context) => {
-            console.log('Successfully sent form data to Netlify Server')
-        }
-    })
-    const onSubmit = (data) => netlify.handleSubmit(null, data)
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
-    const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i
+class Contacts extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { name: "", email: "", message: "" };
+    }
 
-    return (
-        <>
-            {isDesktopOrLaptop && <>
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+    render() {
+        const { name, email, message } = this.state;
+        return (
+            <>
                 <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-
                     <Container>
                         <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
-                        <NetlifyFormProvider {...netlify}>
-                            <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)} style={{fontSize: '1.09375vw'}}>
-                                <Honeypot />
-                                {netlify.success && (
-                                    <p sx={{ variant: 'alerts.success', p: 3 }}>
-                                        Thanks for contacting us!
-                                    </p>
-                                )}
-                                {netlify.error && (
-                                    <p sx={{ variant: 'alerts.muted', p: 3 }}>
-                                        Sorry, we could not reach servers.
-                                    </p>
-                                )}
-
-                                <StyledNameInput
-                                    type='text'
-                                    name='name'
-                                    id='name'
-                                    required />
-                                <StyledEmailInput
-                                    type='email'
-                                    name='email'
-                                    id='email'
-                                    ref={register({
-                                        required: 'Email is required',
-                                        pattern: {
-                                            value: EMAIL_REGEX,
-                                            message: 'Invalid email address'
-                                        }
-                                    })}
-                                    sx={{
-                                        variant: 'forms.input'
-                                    }}
-                                />
-                                <StyledMessageInput name="message" id='message' required />
-                                <StyledSubmit type='submit' sx={{ variant: 'buttons.success' }} />
-                            </NetlifyFormComponent>
-                        </NetlifyFormProvider>
+                        <form style={{ fontSize: '1.5vw' }} onSubmit={this.handleSubmit}>
+                            <StyledNameInput type="text" name="name" value={name} onChange={this.handleChange} required />
+                            <StyledEmailInput type="email" name="email" value={email} onChange={this.handleChange} required />
+                            <StyledMessageInput name="message" value={message} onChange={this.handleChange} required />
+                            <StyledSubmit type='submit' />
+                        </form>
                         <Magazine src={ContactMag} />
                         <Envelope src={EnvelopePic} />
                     </Container>
                 </ScrollAnimation>
-            </>}
-
-            {isTabletOrMobile && isPortrait && <>
-                <ContactsMobile />
-            </>}
-
-            {isBigScreen && <> </>}
-        </>
-    )
+            </>
+        )
+    }
 }
-
+export default Contacts;
 const Container = styled.div`
     margin-top: 6%;
     position: relative; 

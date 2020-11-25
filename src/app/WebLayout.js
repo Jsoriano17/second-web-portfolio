@@ -2,10 +2,10 @@ import React from 'react'
 import { Home } from './components/Home'
 import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
-import { Contacts } from './components/Contacts'
 import styled from 'styled-components'
 import { Navbar } from './components/Navbar'
 import ScrollToTop from "react-scroll-to-top";
+import Contacts from './components/Contacts'
 
 export const WebLayout = () => {
     return (
