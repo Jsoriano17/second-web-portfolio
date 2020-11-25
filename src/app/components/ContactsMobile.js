@@ -28,33 +28,23 @@ class ContactsMobile extends React.Component {
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
     render() {
+        const { name, email, message } = this.state;
         return (
-            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                <Container>
-                    <StyledH1 id="contacts">Lets_Work</StyledH1>
-                    <StyledH1Two>Together.</StyledH1Two>
-                    <form style={{ fontSize: '1.09375vw' }} >
-                        <StyledNameInput  />
-                        <StyledEmailInput />
-                        <StyledMessageInput/>
-                        <StyledSubmit />
-                    </form>
-                    <Magazine src={ContactMag} />
-                </Container>
-            </ScrollAnimation>
+           <>
+           </>
         )
     }
 }
 
 export default ContactsMobile
 
-const Container = styled.div`
+const ContainerMobile = styled.div`
     margin-top: 6%;
     position: relative; 
     width: 100%;
     display: inline-block;
 `
-const StyledNameInput = styled.input`
+const StyledNameInputMobile = styled.input`
     position: absolute;
     top: 67.2%;
     left: 35.5%;
@@ -69,7 +59,7 @@ const StyledNameInput = styled.input`
     -moz-box-shadow: none;
     box-shadow: none;
 `
-const StyledEmailInput = styled.input`
+const StyledEmailInputMobile = styled.input`
     top: 88.5%;
     left: 31%;
     position: absolute;
@@ -84,7 +74,7 @@ const StyledEmailInput = styled.input`
     -moz-box-shadow: none;
     box-shadow: none;
 `
-const StyledMessageInput = styled.textarea`
+const StyledMessageInputMobile = styled.textarea`
     left: 31%;
     top: 98%;
     width: 54%;
@@ -102,7 +92,7 @@ const StyledMessageInput = styled.textarea`
     -moz-box-shadow: none;
     box-shadow: none;
 `
-const StyledSubmit = styled.input`
+const StyledSubmitMobile = styled.input`
     position: absolute;
     z-index: 1;    
     width: 12%; 
@@ -114,21 +104,21 @@ const StyledSubmit = styled.input`
     left: 75.5%;
     cursor: pointer;
 `
-const Magazine = styled.img`
+const MagazineMobile = styled.img`
     width: 100%;
     position: absolute;
     top: 30%; 
     left: 0%;
     z-index: 0;
 `
-const StyledH1 = styled.h1`
+const StyledH1Mobile = styled.h1`
     font-family: Impact_Label;
     font-size: 15vw;
     color: black;
     font-weight: 100;
     text-align: center; 
 `
-const StyledH1Two = styled.h1`
+const StyledH1TwoMobile = styled.h1`
     font-family: Impact_Label;
     font-size: 13vw;
     margin-bottom: 85%;
