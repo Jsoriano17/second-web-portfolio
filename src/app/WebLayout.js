@@ -14,8 +14,17 @@ export const WebLayout = () => {
             <Home />
             <Projects />
             <Skills />
-            <Contacts/>
-            <ScrollToTop color="white" viewBox="-70 -10 400 300" smooth={true} top={500} style={{zIndex: 5, background: 'black'}}/>
+            <Contacts />
+            <ScrollToTop
+                color="white"
+                viewBox="-70 -10 400 300"
+                smooth={true}
+                top={500}
+                style={{
+                    zIndex: 5,
+                    background: 'black',
+                    opacity: 0.7
+                }} />
         </Container>
     )
 }
