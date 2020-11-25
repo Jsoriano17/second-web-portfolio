@@ -3,32 +3,57 @@ import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ContactMag from '../assets/contact-mag-mobile.png';
 
-export const ContactsMobile = () => {
-    return (
-        <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-            <Container>
-                <StyledH1 id="contacts">Lets_Work</StyledH1>
-                <StyledH1Two>Together.</StyledH1Two>
-                <StyledForm name="contact" method="POST" data-netlify="true">
-                    <StyledNameInput name="name" required />
-                    <StyledEmailInput type="email" required />
-                    <StyledMessageInput name="message" required />
-                    <StyledSubmit type="submit" value="Submit" />
-                </StyledForm>
-                <Magazine src={ContactMag}  />
-            </Container>
-        </ScrollAnimation>
-    )
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
 }
+
+class ContactsMobile extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { name: "", email: "", message: "" };
+    }
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    render() {
+        const { name, email, message } = this.state;
+        return (
+            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                <Container>
+                    <StyledH1 id="contacts">Lets_Work</StyledH1>
+                    <StyledH1Two>Together.</StyledH1Two>
+                    <form style={{ fontSize: '1.09375vw' }} onSubmit={this.handleSubmit}>
+                        <StyledNameInput type="text" name="name" value={name} onChange={this.handleChange} required />
+                        <StyledEmailInput type="email" name="email" value={email} onChange={this.handleChange} required />
+                        <StyledMessageInput name="message" value={message} onChange={this.handleChange} required />
+                        <StyledSubmit type='submit' />
+                    </form>
+                    <Magazine src={ContactMag} />
+                </Container>
+            </ScrollAnimation>
+        )
+    }
+}
+
+export default ContactsMobile
 
 const Container = styled.div`
     margin-top: 6%;
     position: relative; 
     width: 100%;
     display: inline-block;
-`
-const StyledForm = styled.form`
-    font-size: 1.09375vw;
 `
 const StyledNameInput = styled.input`
     position: absolute;

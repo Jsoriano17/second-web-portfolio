@@ -3,20 +3,20 @@ import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ContactMag from '../assets/magazines/contact-mag.png';
 import EnvelopePic from '../assets/envelope.png';
-
+import MediaQuery from 'react-responsive'
+import ContactsMobile from './ContactsMobile';
 
 const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
-  }
+}
 
 class Contacts extends React.Component {
     constructor(props) {
-      super(props);
-      this.state = { name: "", email: "", message: "" };
+        super(props);
+        this.state = { name: "", email: "", message: "" };
     }
-
     handleSubmit = e => {
         fetch("/", {
             method: "POST",
@@ -35,19 +35,25 @@ class Contacts extends React.Component {
         const { name, email, message } = this.state;
         return (
             <>
-                <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                    <Container>
-                        <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
-                        <form style={{ fontSize: '1.5vw' }} onSubmit={this.handleSubmit}>
-                            <StyledNameInput type="text" name="name" value={name} onChange={this.handleChange} required />
-                            <StyledEmailInput type="email" name="email" value={email} onChange={this.handleChange} required />
-                            <StyledMessageInput name="message" value={message} onChange={this.handleChange} required />
-                            <StyledSubmit type='submit' />
-                        </form>
-                        <Magazine src={ContactMag} />
-                        <Envelope src={EnvelopePic} />
-                    </Container>
-                </ScrollAnimation>
+                <MediaQuery minDeviceWidth={1224}>
+                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
+                        <Container>
+                            <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
+                            <form style={{ fontSize: '2vw' }} onSubmit={this.handleSubmit}>
+                                <StyledNameInput type="text" name="name" value={name} onChange={this.handleChange} required />
+                                <StyledEmailInput type="email" name="email" value={email} onChange={this.handleChange} required />
+                                <StyledMessageInput name="message" value={message} onChange={this.handleChange} required />
+                                <StyledSubmit type='submit' />
+                            </form>
+                            <Magazine src={ContactMag} />
+                            <Envelope src={EnvelopePic} />
+                        </Container>
+                    </ScrollAnimation>
+                </MediaQuery>
+                <MediaQuery maxDeviceWidth={1224} orientation={'portrait'}>
+                    <ContactsMobile />
+                </MediaQuery>
+                <MediaQuery minDeviceWidth={4000}></MediaQuery>
             </>
         )
     }
@@ -119,7 +125,6 @@ const StyledSubmit = styled.input`
     left: 68.125%;
     cursor: pointer;
 `
-
 const Magazine = styled.img`
     width: 86%;
     position: absolute;
