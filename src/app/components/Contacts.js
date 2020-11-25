@@ -51,19 +51,7 @@ class Contacts extends React.Component {
                     </ScrollAnimation>
                 </MediaQuery>
                 <MediaQuery maxDeviceWidth={1224} orientation={'portrait'}>
-                    <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
-                        <ContainerMobile>
-                            <StyledH1Mobile id="contacts">Lets_Work</StyledH1Mobile>
-                            <StyledH1TwoMobile>Together.</StyledH1TwoMobile>
-                            <form style={{ fontSize: '1.09375vw' }} onSubmit={this.handleSubmit}>
-                                <StyledNameInputMobile type="text" name="name" value={name} onChange={this.handleChange} required />
-                                <StyledEmailInputMobile type="email" name="email" value={email} onChange={this.handleChange} required />
-                                <StyledMessageInputMobile name="message" value={message} onChange={this.handleChange} required />
-                                <StyledSubmitMobile type='submit' />
-                            </form>
-                            <MagazineMobile src={ContactMagMobile} />
-                        </ContainerMobile>
-                    </ScrollAnimation>
+                   
                 </MediaQuery>
                 <MediaQuery minDeviceWidth={4000}></MediaQuery>
             </>

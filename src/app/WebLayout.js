@@ -4,8 +4,9 @@ import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
 import styled from 'styled-components'
 import { Navbar } from './components/Navbar'
-import ScrollToTop from "react-scroll-to-top";
-import Contacts from './components/Contacts'
+import ScrollToTop from "react-scroll-to-top"
+// import Contacts from './components/Contacts'
+import ContactMobile from './components/ContactMobile'
 
 export const WebLayout = () => {
     return (
@@ -14,7 +15,9 @@ export const WebLayout = () => {
             <Home />
             <Projects />
             <Skills />
-            <Contacts />
+            {/* <Contacts />
+             */}
+             <ContactMobile />
             <ScrollToTop
                 color="white"
                 viewBox="-70 -10 400 300"
