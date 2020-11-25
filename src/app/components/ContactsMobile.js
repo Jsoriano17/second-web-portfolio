@@ -28,17 +28,16 @@ class ContactsMobile extends React.Component {
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
     render() {
-        const { name, email, message } = this.state;
         return (
             <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                 <Container>
                     <StyledH1 id="contacts">Lets_Work</StyledH1>
                     <StyledH1Two>Together.</StyledH1Two>
-                    <form style={{ fontSize: '1.09375vw' }} onSubmit={this.handleSubmit}>
-                        <StyledNameInput type="text" name="name" value={name} onChange={this.handleChange} required />
-                        <StyledEmailInput type="email" name="email" value={email} onChange={this.handleChange} required />
-                        <StyledMessageInput name="message" value={message} onChange={this.handleChange} required />
-                        <StyledSubmit type='submit' />
+                    <form style={{ fontSize: '1.09375vw' }} >
+                        <StyledNameInput  />
+                        <StyledEmailInput />
+                        <StyledMessageInput/>
+                        <StyledSubmit />
                     </form>
                     <Magazine src={ContactMag} />
                 </Container>
