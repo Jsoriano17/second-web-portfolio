@@ -32,8 +32,8 @@ const StyledForm = styled.form`
 `
 const StyledNameInput = styled.input`
     position: absolute;
-    top: 81%;
-    left: 35%;
+    top: 67.2%;
+    left: 35.5%;
     width: 52%;
     background: transparent;
     font-size: 3vw;
@@ -46,7 +46,7 @@ const StyledNameInput = styled.input`
     box-shadow: none;
 `
 const StyledEmailInput = styled.input`
-    top: 110.5%;
+    top: 88.5%;
     left: 31%;
     position: absolute;
     width: 56%;
@@ -62,9 +62,9 @@ const StyledEmailInput = styled.input`
 `
 const StyledMessageInput = styled.textarea`
     left: 31%;
-    top: 124%;
+    top: 98%;
     width: 54%;
-    height: 25%;
+    height: 19%;
     position: absolute;
     background: transparent;
     font-size: 3vw;
@@ -85,7 +85,7 @@ const StyledSubmit = styled.input`
     border: 1px solid black;
     background: transparent;
     padding: 0.5% 0 ;
-    top: 155%;
+    top: 120%;
     font-size: 3vw;
     left: 75.5%;
     cursor: pointer;
@@ -99,15 +99,15 @@ const Magazine = styled.img`
 `
 const StyledH1 = styled.h1`
     font-family: Impact_Label;
-    font-size: 12vw;
+    font-size: 15vw;
     color: black;
     font-weight: 100;
     text-align: center; 
 `
 const StyledH1Two = styled.h1`
     font-family: Impact_Label;
-    font-size: 10vw;
-    margin-bottom: 60%;
+    font-size: 13vw;
+    margin-bottom: 85%;
     color: black;
     font-weight: 100;
     text-align: center; 
