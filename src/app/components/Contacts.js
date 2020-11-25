@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ContactMag from '../assets/magazines/contact-mag.png';
 import EnvelopePic from '../assets/envelope.png';
 import { useMediaQuery } from 'react-responsive';
 import { ContactsMobile } from './ContactsMobile';
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
 
 export const Contacts = () => {
     const isDesktopOrLaptop = useMediaQuery({
@@ -14,24 +20,40 @@ export const Contacts = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+    const handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...formData })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    const handleChange = e => setFormData({ [e.target.name]: e.target.value });
+
     return (
         <>
             {isDesktopOrLaptop && <>
                 <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                     <Container>
                         <StyledH1 id="contacts">Lets_Work_Together.</StyledH1>
-                        <StyledForm name="contact" method="POST" data-netlify="true">
-                            <StyledNameInput name="name" required />
-                            <StyledEmailInput type="email" required />
-                            <StyledMessageInput name="message" required />
-                            <StyledSubmit type="submit" value="Submit" />
+                        <StyledForm onSubmit={handleSubmit}>
+                            <StyledNameInput type="text" name="name" value={formData.name} onChange={handleChange} required />
+                            <StyledEmailInput type="email" name="email" value={formData.email} onChange={handleChange} required />
+                            <StyledMessageInput name="message" value={formData.message} onChange={handleChange} required />
+                            <StyledSubmit type="submit" />
                         </StyledForm>
                         <Magazine src={ContactMag} />
                         <Envelope src={EnvelopePic} />
                     </Container>
                 </ScrollAnimation>
             </>}
-            
+
             {isTabletOrMobile && isPortrait && <>
                 <ContactsMobile />
             </>}
