@@ -13,17 +13,10 @@ export const WebLayout = () => {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-device-width: 1224px)'
     })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 5000px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
     const chooseContactComponent = () => {
         if (isDesktopOrLaptop) {
             return <Contacts />
-        } else if (isBigScreen) {
-            return <></>
-        }  else if (isTabletOrMobile && !isPortrait) {
-            return <></>
         } else {
             return <ContactMobile />
         }
