@@ -20,7 +20,10 @@ class ContactMobile extends React.Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
         })
-            .then(() => alert("Message successfully sent! I will respond to you as soon as I can."))
+            .then(() => {
+                alert("Message successfully sent! I will respond to you as soon as I can.")
+                this.setState({ name: "", email: "", message: "" })
+            })
             .catch(error => alert(error));
 
         e.preventDefault();
